@@ -1,0 +1,429 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #3e3a35;
+
+    background-color: #FAF6F0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Playfair Display', serif;
+    color: #1a1510;
+    font-weight: 700;
+}
+
+
+.site-header {
+    padding: 24px 0;
+    background-color: #FAF6F0;
+}
+
+.nav-bar {
+    max-width: 1100px;
+    margin: 0 auto;
+    
+    padding: 0 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* .brand {
+    display: flex;
+    flex-direction: column;
+} */
+
+.brand-name {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.brand-tagline {
+    font-size: 12px;
+    font-weight: 400;
+    color: #7A746D;
+    margin-top: 2px;
+}
+
+/* .navigation-menu {
+    display: flex;
+    align-items: center;
+} */
+
+.nav-links {
+    display: flex;
+    gap: 28px;
+
+    list-style: none;
+}
+
+.nav-links li a {
+    font-size: 14px;
+    font-weight: 500;
+    color: #3E3A35;
+
+}
+
+.nav-links a:hover {
+    color: #B95E3C;
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 24px;
+    border-radius: 50px;
+
+    font-size: 14px;
+    font-weight: 500;
+    background-color: #B95E3C;
+    color: #FFF;
+    border: 1px solid #B95E3C;
+
+
+}
+
+.cta-button:hover {
+    background-color: #9C4B2E;
+    border-color: #9C4B2E;
+}
+
+
+.banner {
+    padding: 40px 0 80px;
+    overflow: hidden;
+}
+
+.banner-layout {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 48px;
+}
+
+.banner-textbox {
+    max-width: 480px;
+}
+
+.bnr-heading {
+    font-size: 56px;
+    line-height: 1.1;
+
+    margin-bottom: 24px;
+}
+
+.bnr-description {
+    font-size: 17px;
+    color: #5C564E;
+    margin-bottom: 32px;
+    font-weight: 400;
+}
+
+.bnr-phto-wrap {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-phto {
+    width: 100%;
+    max-width: 460px;
+    height: 310px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+
+.menu-section {
+    background-color: #F1EAE1;
+    padding: 80px 0;
+    border-top: 1px solid #EAE2D8;
+}
+
+.menu-main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.menu-heading {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 54px;
+}
+
+.food-category {
+    margin-bottom: 60px;
+}
+
+.food-category:last-of-type {
+    margin-bottom: 0;
+}
+
+.category-heading {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 32px;
+    border-bottom: 1px solid #E2D9CE;
+
+    padding-bottom: 12px;
+    display: inline-block;
+    width: 100%;
+}
+
+.food-coll {
+    display: flex;
+    flex-direction: row;
+    gap: 28px;
+}
+
+
+.food-card {
+    flex: 1;
+    background-color: #FAF6F0;
+    border: 1px solid #E0D7CB;
+    border-radius: 14px;
+    padding: 24px;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+ 
+}
+
+.food-card:hover {
+    background-color: rgb(255, 240, 221);
+}
+
+.food-img {
+    width: 100%;
+    height: 160px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.dish-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.food-name {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #1a1510;
+}
+
+.food-description {
+    font-size: 15px;
+    color: #6E6860;
+    margin-bottom: 16px;
+    line-height: 1.5;
+}
+
+.food-price {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1a1510;
+    margin-top: auto;
+
+}
+
+
+.story-section {
+    padding: 100px 0;
+    background-color: #FAF6F0;
+    position: relative;
+}
+
+.story-layout {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+}
+
+.story-textbox {
+    width: 50%;
+    background-color: #F6EDE2;
+    padding: 48px;
+    border-radius: 16px;
+    position: relative;
+}
+
+.story-badge {
+    font-size: 14px;
+    font-weight: 600;
+    color: #B95E3C;
+    margin-bottom: 12px;
+    display: block;
+}
+
+.story-heading {
+    font-size: 40px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.story-body {
+    font-size: 17px;
+    color: #5C564E;
+    line-height: 1.7;
+}
+
+
+.story-photo {
+    width: 100%;
+    max-width: 440px;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 14px;
+}
+
+
+.site-footer {
+    background-color: #2F362F;
+    color: #E2DCD3;
+    padding: 60px 0 24px;
+}
+
+.footer-layout {
+    max-width: 1100px;
+    margin: 0 auto;
+
+    padding: 0 24px 40px;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    border-bottom: 1px solid #444E44;
+}
+
+.footer-column {
+    flex: 1;
+}
+
+.footer-column h4,
+.footer-title {
+    color: #FFF;
+    font-size: 18px;
+    margin-bottom: 18px;
+    font-family: 'Playfair Display', serif;
+}
+
+.footer-column p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #BBB4AA;
+    margin-bottom: 8px;
+}
+
+.footer-brand .footer-tagline {
+    font-family: 'Playfair Display', serif;
+    margin-top: 4px;
+
+    font-size: 15px;
+
+}
+
+.footer-copyright {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 24px 24px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: #8C8479;
+}
+
+
+
+@media (max-width: 768px) {
+    .nav-bar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .brand {
+        text-align: center;
+    }
+
+    .nav-links {
+        gap: 20px;
+    }
+
+    .banner-layout {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .banner-textbox {
+        max-width: 100%;
+    }
+
+    .food-coll {
+        
+        flex-direction: column;
+        gap: 28px;
+    }
+
+    .story-layout {
+        flex-direction: column;
+    }
+
+    .story-textbox {
+        width: 100%;
+
+        padding: 24px;
+    }
+
+    .story-photo-wrap {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .story-photo {
+        width: 100%;
+        height: 240px;
+    }
+
+    .footer-layout {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .footer-copyright {
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+    }
+}
