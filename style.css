@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins',sans-serif;
+    background-color: #FFF8F0;
+    color: #2D2a26;
+    line-height: 1.7;
+}
+
+/* header */
+header{
+    background-color: #b60b4c;
+    color: #ffffff;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1{
+    font-family: 'Montserrat', serif;
+    font-size: 48px;
+    letter-spacing: 2px;
+}
+
+.tagline{
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    color: #ffdab9;
+}
+
+nav{
+    margin-top: 15px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 6px 12px;
+    border: 1px solid transparent;
+}
+
+nav a:hover{
+    border: 1px solid #ffdab9;
+    border-radius: 4px;
+    color: #ffdab9;
+}
+
+/* main */
+main{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+#menu h2, #about h2{
+    font-family: 'Montserrat', serif;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #8b0000;
+}
+
+/* menu categories */
+.menu-category{
+    margin-bottom: 50px;
+}
+
+.menu-category h3{
+    font-size: 28px;
+    color: #333;
+    border-left: 5px solid #8b0000;
+    padding-left: 12px;
+    margin-bottom: 20px;
+}
+
+.menu-items{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* menu card */
+.menu-card{
+    background-color: #ffffff;
+    border: 1px solid #e8d5c4;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 10px 0;
+    width: 32%;
+    min-width: 280px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease;
+}
+
+.menu-card:hover{
+    transform: translate(-5px);
+}
+
+.menu-card h4{
+    font-size: 20px;
+    margin-bottom: 8px;
+    color: #8b0000;
+}
+
+.menu-card p{
+    font-size: 14px;
+    color: #5a5a5a;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.price{
+    display: inline-block;
+    font-weight: 700;
+    font-size: 18px;
+    color: #2D2a26;
+    background-color: #ffedd5;
+    padding: 4px 10px;
+    border-radius: 20px;
+}
+
+/* about us */
+#about{
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    text-align: center;
+    margin-top: 20px;
+    border: 1px solid #e8d5c4;
+}
+
+#about p{
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 16px;
+}
+
+/* footer */
+footer{
+    background-color: #2D2a26;
+    color: #FFF8F0;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 40px;
+}
+
+footer p{
+    margin: 8px 0;
+    font-size: 14px;
+}
+
+.copyright{
+    margin-top: 15px;
+    color: #c4b5a5;
+    font-size: 13px;
+}
