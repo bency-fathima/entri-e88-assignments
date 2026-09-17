@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Delight</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+       
+
+        body {
+            font-family: "Poppins", sans-serif;
+            background: #f8f1e8;
+            color: #554740;
+            line-height: 1.7;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: "Merriweather", serif;
+        }
+
+        /* Navigation */
+        header {
+            background: #2d2420;
+            position: sticky;
+            top: 0;
+
+        }
+
+        .navbar {
+            max-width: 1200px;
+            margin: auto;
+            padding: 16px 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            color: #ffff;
+            font-size: 24px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 28px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 15px;
+        }
+
+       
+
+        /* Hero section */
+        #intro {
+            padding: 120px 25px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #ffff;
+                background-image: url("/img/cafe.jpg");
+                background-size: cover;
+                background-position: center;
+        }
+
+        #intro h2 {
+    
+            font-size: 60px;
+            margin-bottom: 20px;
+        }
+
+        .intro {
+            max-width: 760px;
+            font-size: 18px;
+        }
+.ourmenu{
+    text-align: center;
+    margin-top: 50px;
+
+}
+
+
+        section h2 {
+            color:#735548 ;
+            font-size: 34px;
+            margin-bottom: 18px;
+        }
+
+        /* Menu */
+        .menu-grid {
+            margin-top: 35px;
+
+    
+            gap: 25px;
+            text-align: left;
+        }
+
+        .menu-card {
+            margin:50px;       
+             background: #ffff;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(70, 46, 33, 0.1);
+        }
+
+        .menu-card h3 {
+            color: #c29b61;
+            margin-bottom: 15px;
+            font-size: 21px;
+        }
+
+        .menu-card ul {
+            list-style: none;
+        }
+
+        .menu-card li {
+            padding: 8px 0;
+            border-bottom: 1px solid #eee3d8;
+        }
+        .menu-card li span {
+            float: right;
+            color: #554740;
+        }
+        .form {
+           padding: 20px; 
+           border-radius: 6px; 
+           max-width: 500px; 
+           margin: auto; 
+           box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+         }
+input, textarea, select {
+width: 100%;
+ padding: 10px; 
+ margin-top: 6px; 
+ margin-bottom: 16px;
+border: 1px solid #ccc; 
+border-radius: 4px; 
+box-sizing: border-box;
+}
+button {
+     background-color: #554740; 
+     color: white; 
+     padding: 12px 20px;
+border: none; 
+border-radius: 4px; 
+cursor: pointer; }
+button:hover {
+     background-color: #735548;
+     }
+        
+
+        #about,
+        #contact {
+            background: #fffaf4;
+            max-width: none;
+           
+          padding: 50px 25px;
+            text-align: center;
+        }
+
+       section p.intro {
+            max-width: 700px;
+            margin: auto;
+            font-size: 18px;
+        }
+        /* Footer */
+        footer {
+            padding: 25px;
+            text-align: center;
+            background: #2d2420;
+            color: #ffff;
+            font-size: 14px;
+        }
+
+       
+        
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">Café Delight</h1>
+
+            <ul class="nav-links">
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="intro">
+            <h2>Welcome to Café Delight</h2>
+            <p class="intro">
+                Where delicious food meets luxury ambiance and aesthetic vibes.
+                Enjoy beautifully crafted dishes, premium coffee, and a stylish
+                atmosphere designed to make every visit memorable.
+            </p>
+        </section>
+
+        <section class="ourmenu" id="menu">
+            <h2>Our Menu</h2>
+            <p>
+                Explore our diverse menu featuring gourmet dishes, artisanal
+                coffee, and delightful desserts.
+            </p>
+
+            <div class="menu-grid">
+                <div class="menu-card">
+                    <h3>Breakfast</h3>
+                    <ul>
+                        <li>Avocado Toast<span>₹200</span></li>
+                        <li>Eggs Benedict<span>₹250</span></li>
+                        <li>Pancakes with Fresh Berries<span>₹350</span></li>
+                    </ul>
+                </div>
+
+                <div class="menu-card">
+                    <h3>Main Courses</h3>
+                    <ul>
+                        <li>Grilled Chicken Salad<span>₹400</span></li>
+                        <li>Quinoa Bowl with Roasted Vegetables<span>₹550</span></li>
+                        <li>Gourmet Sandwiches<span>₹600</span></li>
+                    </ul>
+                </div>
+
+                <div class="menu-card">
+                    <h3>Dinner</h3>
+                    <ul>
+                        <li>Seared Salmon with Lemon Butter Sauce<span>₹500</span></li>
+                        <li>Filet Mignon with Garlic Mashed Potatoes<span>₹600</span></li>
+                        <li>Vegetarian Risotto<span>₹350</span></li>
+                    </ul>
+                </div>
+
+                <div class="menu-card">
+                    <h3>Desserts</h3>
+                    <ul>
+                        <li>Chocolate Lava Cake<span>₹300</span></li>
+                        <li>Tiramisu<span>₹350</span></li>
+                        <li>Seasonal Fruit Tart<span>₹300</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>About Us</h2>
+            <p class="intro">
+                Learn more about our story, mission, and passion for creating
+                exceptional café experiences.
+                <span>feel free to visit us and enjoy our cozy ambiance and delicious offerings.</span>
+            </p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p class="intro">
+                Get in touch with us to make reservations, ask questions, or
+                share your feedback. We would love to hear from you!
+            </p>
+            <div class="form">
+            <label for="name">Name</label>
+<input type="text" id="name" name="name" placeholder="Your full name" required>
+
+<label for="email">Email</label>
+<input type="email" id="email" name="_replyto" placeholder="your.email@example.com" required>
+
+<label for="subject">Subject</label>
+<input type="text" id="subject" name="subject" placeholder="Subject" required>
+
+<label for="message">Message</label>
+<textarea id="message" name="message" placeholder="Write your message..." rows="5" required></textarea>
+
+<button type="submit">Send Message</button>
+</div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Café Delight. All rights reserved.</p>
+        <p>cafe delight</p>
+        <p>Contact: 58785555</p>
+    </footer>
+
+</body>
+</html>
