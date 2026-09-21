@@ -1,0 +1,257 @@
+body {
+    font-family: bodoni moda;
+    background-color: #f9f9f0;
+}
+
+.headbar {
+   color: rgb(20, 49, 44);
+   height: 80px;
+   margin-left: 30px; 
+   display: flex;
+   justify-content: space-between; 
+}
+
+.tagline {
+    width: 260px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    
+}
+
+.logoname {
+    margin: 0;
+    font-size: 30px;
+    height: 30px;
+}
+
+nav, a {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    margin-bottom: 0px;
+    padding-right: 20px;
+    color: black;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.introduction {
+    background-color: rgb(20, 49, 44);
+    padding: 30px;
+    max-width: 100%;
+    height: 180px;
+}
+
+.headline, .secondline {
+    color: #f9f9f0;
+   
+}
+
+.headline {
+    font-family: 'Times New Roman', Times, serif; 
+    font-style: italic;
+    font-size: 40px;
+    line-height: 45px;
+    word-spacing: 5px;
+    margin-bottom: 9px;
+    margin-top: 9px;
+}
+
+.secondline {
+    font-family:Arial, Helvetica, sans-serif;
+    margin-top: 0px;
+    font-size: 15px;
+    color: #4e706b;
+}
+
+.taglineIntro {
+    color: rgb(183, 162, 42);
+    margin-bottom: 0;
+    font-size: 10px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    color: rgb(20, 49, 44);
+    font-style: normal;
+    margin-bottom: 0;
+    height: 40px; 
+    align-items: center;
+    border: solid 2px rgb(183, 162, 42);
+}
+
+.starterHeading {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    color: rgb(183, 162, 42);
+    margin-top: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+}
+
+.starter {
+    padding: 30px;
+    gap: 20px;
+}
+
+.starterImg {
+    width: 200px;
+    height: 150px;
+    border-radius: 10px;;
+}
+
+.startermenu {
+    display: flex;
+    gap: 20px;
+}
+
+.paneer, .kebab, .prawns {
+    background-color:#f0f0de;
+    padding: 20px;
+    border-radius: 10px;
+    width: 496px;
+    height: 300px;
+    line-height: 20px;
+}
+
+.paneer h3, .kebab h3, .prawns h3 {
+    color: rgb(20, 49, 44);
+    font-weight: 800;
+}
+.price {
+    color: rgb(239, 155, 0);
+}
+
+
+
+
+.maincourseHeading {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    color: rgb(183, 162, 42);
+    margin-top: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+}
+
+.maincourse {
+    padding: 30px;
+    gap: 20px;
+}
+
+.maincourseImg {
+    width: 200px;
+    height: 150px;
+    border-radius: 10px;
+}
+
+.maincourseMenu {
+    display: flex;
+    gap: 20px;
+}
+
+.chickenBiryani, .vegBiryani, .butterChicken {
+    background-color:#f0f0de;
+    padding: 20px;
+    border-radius: 10px;
+    width: 496px;
+    height: 300px;
+    line-height: 20px;
+}
+
+.chickenBiryani h3, .vegBiryani h3, .butterChicken h3 {
+    color: rgb(20, 49, 44);
+    font-weight: 800;
+}
+.price {
+    color: rgb(239, 155, 0);
+}
+
+
+
+.dessertHeading {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    color: rgb(183, 162, 42);
+    margin-top: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+}
+
+.dessert {
+    padding: 30px;
+    gap: 20px;
+}
+
+.dessertImg {
+    width: 200px;
+    height: 150px;
+    border-radius: 10px;;
+}
+
+.dessertMenu {
+    display: flex;
+    gap: 20px;
+}
+
+.gulabJamun, .cheeseCake, .brownie {
+    background-color:#f0f0de;
+    padding: 20px;
+    border-radius: 10px;
+    width: 496px;
+    height: 300px;
+    line-height: 20px;
+}
+
+.gulabJamun h3, .cheeseCake h3, .brownie h3 {
+    color: rgb(20, 49, 44);
+    font-weight: 800;
+}
+.price {
+    color: rgb(239, 155, 0);
+}
+
+
+.about {
+    background-color: rgb(20, 49, 44);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.about h2 {
+    color:rgb(183, 162, 42);
+}
+
+.about p {
+    color: #f0f0de;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 30px;;
+}
+
+.about div {
+    max-width: 800px;
+}
+
+.aboutImg {
+    width: 400px;
+    height: 150px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.details {
+    background-color: #f0f0de;
+    display: flex;
+    padding: 30px;
+    justify-content: space-between;
+    align-items: center;
+}
