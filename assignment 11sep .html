@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool Cakes</title>
+    <style>
+    nav h3{
+        display: inline-block;
+        margin: 10px;
+        color: aliceblue;
+    }
+    nav{
+        background-color: blue;
+        text-align: right;
+        color: aliceblue;
+
+        padding: 6px;
+    }
+    a{
+        color: white;
+        margin: 15px;
+        font-size: 18px;
+    }
+    .image { 
+        width: 250px;
+        height: 250px;
+    }
+    .menuname{
+        font-size: 24px;
+    }
+    .perpc{
+        font-size: small;
+    }
+    .price{
+        font-size: 28px;
+    }
+    .item{
+        padding: 12px;
+        border-radius: 10px;
+        background-color: rgb(199, 246, 246);
+        display: inline-block;
+        margin: 10px;
+        width: 250px;
+    }
+    .p{
+        color: rgb(67, 66, 66);
+    }
+    .Buy{
+        width: 20px,50px;
+        padding: 15px;
+        border-radius: 10px;
+        font-size: 18px;
+        color: aliceblue;
+        background-color: blue;
+        text-align: center;
+    }
+    .Buy:hover{
+        background-color: green;
+    }
+    .about{
+        background-color: aquamarine;
+        padding: 40px 20px;
+        
+    }
+    .contact{
+        background-color: bisque;
+        padding: 40px 20px;
+    }
+    footer{
+        background-color: aqua;
+        padding: 40px 20px;
+    }
+
+</style>
+</head>
+
+<body>
+    <header>
+        <h1 class="brand">
+            Cool cakes and bakes
+        </h1>
+        <p class="tagline">
+            crafted in heaven
+        </p>
+    
+        <nav>
+        <a href="#menu">Menu</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+
+    </header>
+
+<div class="menu">
+
+    <div class="pastries">
+<h1>Pastries</h1>
+    <div class="item 01"> 
+        <img class="image b" src="C:\code\assignment entri\img\images.jpg" alt="nil"> 
+        <h1 class="menuname">Black Forest</h1>
+        <h1 class="price">45 rs<span class="perpc">per pc</span></h1>
+        <p class="p a1">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <div class="Buy">Buy</div>
+    </div>
+
+     <div class="item 02"> 
+        <img class="image b" src="C:\code\assignment entri\img\White-Forest-Cake-Hot-oven-Bakers-1667961139_1445x.jpg" alt="nil"> 
+        <h1 class="menuname">White Forest</h1>
+        <h1 class="price">45 rs<span class="perpc">per pc</span></h1>
+        <p class="p a1">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <div class="Buy">Buy</div>
+    </div>
+
+     <div class="item 03"> 
+        <img class="image b" src="C:\code\assignment entri\img\glazed-chocolate-donuts-thumbnail.jpg" alt="nil"> 
+        <h1 class="menuname">Donuts</h1>
+        <h1 class="price">30 rs<span class="perpc">per pc</span></h1>
+        <p class="p a1">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <div class="Buy">Buy</div>
+    </div>
+    </div>
+
+    <div class="snacks">
+        <h1>Snackes</h1>
+    <div class="item 01"> 
+        <img class="image b" src="C:\code\assignment entri\img\juice\shutterstock_1450591601-750x750.jpg" alt="nil"> 
+        <h1 class="menuname">Puffs</h1>
+        <h1 class="price">25 rs<span class="perpc">per pc</span></h1>
+        <p class="p a1">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <div class="Buy">Buy</div>
+    </div>
+
+     <div class="item 02"> 
+        <img class="image b" src="C:\code\assignment entri\img\juice\samosa-recipe.jpg" alt="nil"> 
+        <h1 class="menuname">Samosa</h1>
+        <h1 class="price">20 rs<span class="perpc">per pc</span></h1>
+        <p class="p a1">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <div class="Buy">Buy</div>
+    </div>
+
+     <div class="item 03"> 
+        <img class="image b" src="C:\code\assignment entri\img\juice\images.jpg" alt="nil"> 
+        <h1 class="menuname">Chicken Roll</h1>
+        <h1 class="price">30 rs<span class="perpc">per pc</span></h1>
+        <p class="p a1">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <div class="Buy">Buy</div>
+    </div>
+
+    <div class="Hotbeverages">
+        <h1>Hot Beverages</h1>
+    <div class="item 01"> 
+        <img class="image b" src="C:\code\assignment entri\img\juice\Masala-Chai-Tea-Recipe-Card.jpg" alt="nil"> 
+        <h1 class="menuname">Tea</h1>
+        <h1 class="price">10 rs<span class="perpc">per pc</span></h1>
+        <p class="p a1">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <div class="Buy">Buy</div>
+    </div>
+
+     <div class="item 02"> 
+        <img class="image b" src="C:\code\assignment entri\img\juice\top-view-hot-espresso-with-brown-coffee-seeds-brown-wooden-desk-coffee-cup-drink.jpg" alt="nil"> 
+        <h1 class="menuname">Coffee</h1>
+        <h1 class="price">15 rs<span class="perpc">per pc</span></h1>
+        <p class="p a1">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <div class="Buy">Buy</div>
+    </div>
+
+     <div class="item 03"> 
+        <img class="image b" src="C:\code\assignment entri\img\juice\Tea.jpg" alt="nil"> 
+        <h1 class="menuname">Lemon Tea</h1>
+        <h1 class="price">10 rs<span class="perpc">per pc</span></h1>
+        <p class="p a1">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <div class="Buy">Buy</div>
+    </div>
+</div>
+</div>
+    
+    <div class="about">
+        <h2>About Us</h2>
+
+        <p>
+            At Cool Cakes and Bakes, we believe every celebration
+            deserves something delicious. We make fresh cakes,
+            pastries and baked treats with quality ingredients
+            and lots of love.
+        </p>
+    </div>
+
+     <div class="contact">
+        <h2>Contact Us</h2>
+
+        <p>123 MG Road, Bengaluru</p>
+        <p>Open: 10 AM - 10 PM</p>
+        <p><mobile->8590374316</mobile-></p>
+     </div>
+
+     <footer>
+
+    <h2>Cool Cakes and Bakes</h2>
+
+    <p>Crafted in heaven</p>
+
+    <div class="footer-info">
+
+        <div>
+            <h3>Our Address</h3>
+            <p>123 Bakery Street,<br>
+            Bengaluru, Karnataka</p>
+        </div>
+
+        <div>
+            <h3>Opening Hours</h3>
+            <p>Monday - Sunday<br>
+            10:00 AM - 10:00 PM</p>
+        </div>
+
+        <div>
+            <h3>Contact Us</h3>
+            <p>+91 98765 43210<br>
+            hello@coolcakes.com</p>
+        </div>
+
+    </div>
+
+    <hr>
+
+    <p>2026 Cool Cakes and Bakes. All rights reserved.</p>
+
+</footer>
+
+</div>
+</body>
+</html>
