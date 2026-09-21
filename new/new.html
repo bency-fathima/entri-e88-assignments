@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header {
+            color: white;
+            background-color: green;
+            text-align: center;
+            padding: 30px 15px
+        }
+
+        h1 {
+            font-size: 40px;
+            margin-bottom: 8px;
+        }
+
+        p {
+            font-size: 15px;
+            margin-bottom: 0px
+        }
+
+        nav {
+            background-color: lightgreen;
+            padding: 1px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        nav a {
+            color: grey;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: black;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 0 15px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 30px;
+            border-bottom: 2px solid darkgreen;
+            display: inline-block;
+            color: darkgreen;
+            padding-bottom: 5px;
+            margin-bottom: 25px;
+        }
+
+        .category-container {
+            margin-bottom: 48px;
+            text-align: center;
+        }
+
+        .box {
+            width: 400px;
+            height: 150px;
+            background-color: white;
+            margin: 10px;
+            box-shadow: 0 4px 6px;
+            border-radius: 8px;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .parent {
+            display: flex;
+            font-weight: bold;
+        }
+
+        .price {
+            color: green;
+        }
+
+        .divider {
+            border: none;
+            height: 1px;
+            background-color: #ccc;
+            margin: 40px 0;
+        }
+        
+        .parent1 {
+            display: flex;
+            font-weight: bold;
+        }
+        .item-header1 {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        .about-us{
+            height:100px;
+            width:100%;
+            box-shadow: 0 4px 16px;
+            border-radius: 8px;
+        }
+        .us{
+            text-align: center;
+            padding:5px;
+        }
+        .p{
+            padding: 10px;
+        }
+        .open {
+            box-shadow: 0 4px 16px;
+            display:flex;
+            justify-content: space-around;
+            border-radius: 4px;
+            background-color:green;
+            margin: 50px;
+            padding:8px;
+        }
+        .color{
+            color:white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1><b>Alibaba Restaurant</b></h1>
+        <p>Welcome to Alibaba Restaurant!</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="https://online.kfc.co.in/menu">Menu</a></li>
+            <li><a href="https://online.kfc.co.in/">About</a></li>
+            <li><a href="https://online.kfc.co.in/contactus">Contact</a></li>
+        </ul>
+    </nav>
+    </header>
+
+    <div class="container">
+        <section>
+            <div style="text-align:center">
+                <h2 class="section-title">Our Menu</h2>
+            </div>
+            <h3>Starters:</h3>
+            <div class="parent">
+                <div class="box">
+                    <div class="item-header">
+                        <span class="item-name">PaneerTikka</span>
+                        <span class="price">220</span>
+                    </div>
+                    <p class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="box">
+                    <div class="item-header">
+                        <span class="item-name">PaneerTikka</span>
+                        <span class="price">220</span>
+                    </div>
+                    <p class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="box">
+                    <div class="item-header">
+                        <span class="item-name">PaneerTikka</span>
+                        <span class="price">220</span>
+                    </div>
+                    <p class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="box">
+                    <div class="item-header">
+                        <span class="item-name">PaneerTikka</span>
+                        <span class="price">220</span>
+                    </div>
+                    <p class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <hr class="divider">
+            <h2>Main Course:</h2>
+            <div class="parent1">
+                <div class="box">
+                    <div class="item-header1">
+                        <span class="item-name">PaneerTikka</span>
+                        <span class="price">220</span>
+                    </div>
+                    <p class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="box">
+                    <div class="item-header1">
+                        <span class="item-name">PaneerTikka</span>
+                        <span class="price">220</span>
+                    </div>
+                    <p class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="box">
+                    <div class="item-header1">
+                        <span class="item-name">PaneerTikka</span>
+                        <span class="price">220</span>
+                    </div>
+                    <p class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="box">
+                    <div class="item-header1">
+                        <span class="item-name">PaneerTikka</span>
+                        <span class="price">220</span>
+                    </div>
+                    <p class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+             <hr class="divider">
+             <h2>Dessert:</h2>
+            <div class="parent1">
+                <div class="box">
+                    <div class="item-header1">
+                        <span class="item-name">PaneerTikka</span>
+                        <span class="price">220</span>
+                    </div>
+                    <p class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="box">
+                    <div class="item-header1">
+                        <span class="item-name">PaneerTikka</span>
+                        <span class="price">220</span>
+                    </div>
+                    <p class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="box">
+                    <div class="item-header1">
+                        <span class="item-name">PaneerTikka</span>
+                        <span class="price">220</span>
+                    </div>
+                    <p class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="box">
+                    <div class="item-header1">
+                        <span class="item-name">PaneerTikka</span>
+                        <span class="price">220</span>
+                    </div>
+                    <p class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <hr class="divider">
+            <div class="about-us">
+            <h3 class="us">About Us</h3>
+            <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque consectetur ad quam sit architecto, accusamus aliquam, illo id ullam ipsum maiores nesciunt. Provident nemo tempore perferendis quia cumque magnam incidunt.</p>
+            </div>
+            <footer class="open">
+            <div class="footer-column">
+                <h3 class="color">Address</h3>
+                <p>abc main street,city road,delhi</p>
+            </div>
+            <div class="footer-column">
+                <h3 class="color">Opening Hours</h3>
+                <p>Monday-Sunday:11.00 AM - 10.00 PM</p>
+            </div>
+            <div class="footer-column">
+                <h3 class="color">Contact Us</h3>
+                <p>+91 1234567890</p>
+            </div>
+            </footer>
+        </section>
+    </div>
+</body>
+
+</html>
