@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A handcrafted menu from BC Cuisine restaurant."
+    />
+    <title>BC Cuisine | Restaurant Menu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="Assignment-1-style.css" />
+  </head>
+  <body>
+    <header class="hero" id="home">
+      <nav class="nav container" aria-label="Main navigation">
+        <a class="brand" href="#home">BC <span>Cuisine</span></a>
+        <div class="nav-links">
+          <a href="#menu">Menu</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+
+      <div class="hero-content container">
+        <p class="eyebrow">Seasonal Indian kitchen</p>
+        <h1>Food made for<br /><em>gathering.</em></h1>
+        <p class="tagline">
+          Thoughtful ingredients, familiar spices, and a little warmth in every
+          plate.
+        </p>
+        <a class="button" href="#menu">Explore the menu</a>
+      </div>
+    </header>
+
+    <main>
+      <section
+        class="menu-section container"
+        id="menu"
+        aria-labelledby="menu-title"
+      >
+        <div class="section-intro">
+          <p class="eyebrow">Our menu</p>
+          <h2 id="menu-title">Made with care,<br />served with joy.</h2>
+          <p>
+            Choose from our favourites, prepared fresh with locally sourced
+            ingredients.
+          </p>
+        </div>
+
+        <section class="category" aria-labelledby="starters-title">
+          <div class="category-heading">
+            <h3 id="starters-title">Starters</h3>
+            <span>To begin</span>
+          </div>
+          <div class="menu-grid">
+            <article class="menu-card">
+              <div class="card-top">
+                <h4>Charred Paneer Tikka</h4>
+                <span>₹285</span>
+              </div>
+              <p>
+                Smoky cottage cheese, mint chutney, pickled onion and a squeeze
+                of lime.
+              </p>
+            </article>
+            <article class="menu-card">
+              <div class="card-top">
+                <h4>Kerala Pepper Prawns</h4>
+                <span>₹365</span>
+              </div>
+              <p>
+                Pan-seared prawns tossed with curry leaf, cracked pepper and
+                coconut.
+              </p>
+            </article>
+            <article class="menu-card">
+              <div class="card-top">
+                <h4>Crisp Corn Chaat</h4>
+                <span>₹225</span>
+              </div>
+              <p>
+                Sweet corn, pomegranate, sev, chilli and tangy tamarind
+                dressing.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="category" aria-labelledby="mains-title">
+          <div class="category-heading">
+            <h3 id="mains-title">Main Course</h3>
+            <span>The heart of the table</span>
+          </div>
+          <div class="menu-grid">
+            <article class="menu-card featured">
+              <div class="card-top">
+                <h4>Butter Chicken</h4>
+                <span>₹425</span>
+              </div>
+              <p>
+                Tender chicken in a silken tomato-fenugreek gravy, served with
+                roomali roti.
+              </p>
+            </article>
+            <article class="menu-card">
+              <div class="card-top">
+                <h4>Garden Korma</h4>
+                <span>₹345</span>
+              </div>
+              <p>
+                Market vegetables and paneer in a gently spiced cashew-coconut
+                sauce.
+              </p>
+            </article>
+            <article class="menu-card">
+              <div class="card-top">
+                <h4>Coastal Fish Curry</h4>
+                <span>₹455</span>
+              </div>
+              <p>
+                Catch of the day in a bright kokum and coconut curry with
+                steamed rice.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="category" aria-labelledby="desserts-title">
+          <div class="category-heading">
+            <h3 id="desserts-title">Desserts</h3>
+            <span>A sweet finish</span>
+          </div>
+          <div class="menu-grid">
+            <article class="menu-card">
+              <div class="card-top">
+                <h4>Cardamom Kulfi</h4>
+                <span>₹185</span>
+              </div>
+              <p>
+                Slow-set milk ice cream with pistachio, saffron and a delicate
+                rose syrup.
+              </p>
+            </article>
+            <article class="menu-card">
+              <div class="card-top">
+                <h4>Warm Gulab Jamun</h4>
+                <span>₹175</span>
+              </div>
+              <p>
+                Soft milk dumplings steeped in saffron syrup with vanilla bean
+                cream.
+              </p>
+            </article>
+            <article class="menu-card">
+              <div class="card-top">
+                <h4>Chocolate Chai Tart</h4>
+                <span>₹210</span>
+              </div>
+              <p>
+                Dark chocolate ganache, masala chai caramel and a crisp almond
+                crust.
+              </p>
+            </article>
+          </div>
+        </section>
+      </section>
+
+      <section class="about" id="about" aria-labelledby="about-title">
+        <div class="container about-content">
+          <p class="eyebrow">Our story</p>
+          <h2 id="about-title">
+            A neighbourhood table<br />with a generous spirit.
+          </h2>
+          <p>
+            BC Cuisine began with Sunday lunches around our grandmother's table.
+            Today, we honour those recipes while giving them a fresh, seasonal
+            point of view. Pull up a chair - there is always room for one more.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact">
+      <div class="container footer-grid">
+        <div>
+          <a class="brand" href="#home">BC <span>Cuisine</span></a>
+          <p>Modern Indian cooking, made from the heart.</p>
+        </div>
+        <div>
+          <h3>Find us</h3>
+          <p>Chandra Nagar<br />Palakkad, Kerala</p>
+        </div>
+        <div>
+          <h3>Opening hours</h3>
+          <p>Tue - Sun: 12 pm - 11 pm<br />Monday: Closed</p>
+        </div>
+      </div>
+      <div class="container copyright">
+        © 2026 BC Cuisine. All rights reserved.
+      </div>
+    </footer>
+  </body>
+</html>
