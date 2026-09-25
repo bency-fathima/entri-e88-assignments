@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FashionHub</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- ----- HEADER ----- -->
+
+    <header class="sticky-top bg-light">
+      <div
+        class="header-content container d-flex align-items-center justify-content-between"
+      >
+        <div class="brand-logo">
+          <a href="#">
+            <h1 class="m-0 fw-bold text-black">FashionHub</h1>
+          </a>
+        </div>
+
+        <!--  ----- Main Navigation -----  -->
+
+        <nav
+          class="desktop-nav d-flex align-items-center"
+          aria-label="Main navigation"
+        >
+          <a class="mx-2" href="#">Men</a>
+          <a class="mx-2" href="#">Women</a>
+          <a class="mx-2" href="#">Accessories</a>
+          <a class="mx-2" href="#">About</a>
+          <a class="mx-2" href="#">Contact</a>
+        </nav>
+
+        <!-- ----- Navigation Actions -----  -->
+
+        <div class="nav-action d-flex align-items-center gap-2">
+          <a
+            href="#"
+            class="d-flex align-items-center justify-content-center"
+            aria-label="Search"
+          >
+            <i class="bi bi-search"></i>
+          </a>
+
+          <a
+            href="#"
+            class="d-flex align-items-center justify-content-center"
+            aria-label="Wishlist"
+          >
+            <i class="bi bi-heart"></i>
+          </a>
+
+          <a
+            href="#"
+            class="d-flex align-items-center justify-content-center"
+            aria-label="Profile"
+          >
+            <i class="bi bi-person"></i>
+          </a>
+
+          <a
+            href="#"
+            class="d-flex align-items-center justify-content-center"
+            aria-label="Shopping cart"
+          >
+            <i class="bi bi-bag bag-icon"></i> <span>2</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- ----- Hero Section ----- -->
+
+      <section class="hero-section position-relative w-100 overflow-hidden">
+        <img
+          class="d-block w-100"
+          src="image/hero.png"
+          alt="New summer fashion collection"
+        />
+
+        <div
+          class="hero-container position-absolute top-50 start-50 translate-middle w-100 text-center"
+        >
+          <div class="hero-content d-flex flex-column align-items-center gap-3">
+            <h1 class="m-0">New Summer Collection</h1>
+
+            <p class="m-0">
+              Discover the definitive high-fashion utility pieces for the modern
+              era.<br />
+              Minimalism meets uncompromising structure.
+            </p>
+          </div>
+
+          <div class="hero-actions d-flex justify-content-center gap-2 mt-3">
+            <a class="btn" href="#">Shop Now</a>
+            <a href="#category">Explore Collection</a>
+          </div>
+        </div>
+      </section>
+      <!-- ----- Shop by Category ----- -->
+
+      <section class="shop-category container" id="category">
+        <h2 class="heading2">Shop by Category</h2>
+
+        <div class="shop-category-grid">
+          <a
+            href="#"
+            class="category-man category-card position-relative d-block overflow-hidden text-white"
+          >
+            <img
+              class="d-block w-100"
+              src="image/category/Man.png"
+              alt="Men's fashion"
+            />
+            <span class="category-content">Men</span>
+          </a>
+
+          <a
+            href="#"
+            class="category-women category-card position-relative d-block overflow-hidden text-white"
+          >
+            <img
+              class="d-block w-100"
+              src="image/category/Women.png"
+              alt="Women's fashion"
+            />
+            <span class="category-content">Women</span>
+          </a>
+
+          <a
+            href="#"
+            class="category-accessories category-card position-relative d-block overflow-hidden text-white"
+          >
+            <img
+              class="d-block w-100"
+              src="image/category/Accessories.png"
+              alt="Fashion accessories"
+            />
+            <span class="category-content">Accessories</span>
+          </a>
+
+          <a
+            href="#"
+            class="category-kids category-card position-relative d-block overflow-hidden text-white"
+          >
+            <img
+              class="d-block w-100"
+              src="image/category/kid.png"
+              alt="Kids' fashion"
+            />
+            <span class="category-content">Kids</span>
+          </a>
+        </div>
+      </section>
+      <!-- ----- Featured Products ----- -->
+
+      <section class="shop-products">
+        <div class="container">
+          <div class="products-header d-flex justify-content-between position-relative">
+            <h2 class="heading2">Featured Products</h2>
+            <a href="#" class="view-all">
+              View All
+              <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+
+          <div class="shop-product-grid row g-3 pt-3">
+            <article class="product-card col-12 col-sm-6 col-lg-3">
+              <img
+                class="d-block w-100"
+                src="image/Products/Outerwear.png"
+                alt="Structured Utility Jacket"
+              />
+
+              <div class="product-content">
+                <h3>Outerwear</h3>
+                <p>Structured Utility Jacket</p>
+                <span class="price">$450</span>
+              </div>
+            </article>
+
+            <article class="product-card col-12 col-sm-6 col-lg-3">
+              <img
+                class="d-block w-100"
+                src="image/Products/Tops.png"
+                alt="Oversized Poplin Shirt"
+              />
+
+              <div class="product-content">
+                <h3>Tops</h3>
+                <p>Oversized Poplin Shirt</p>
+                <span class="price">$180</span>
+              </div>
+            </article>
+
+            <article class="product-card col-12 col-sm-6 col-lg-3">
+              <img
+                class="d-block w-100"
+                src="image/Products/Bottoms.png"
+                alt="Tailored Wide-Leg Trousers"
+              />
+
+              <div class="product-content">
+                <h3>Bottoms</h3>
+                <p>Tailored Wide-Leg Trousers</p>
+                <span class="price">$280</span>
+              </div>
+            </article>
+
+            <article class="product-card col-12 col-sm-6 col-lg-3">
+              <img
+                class="d-block w-100"
+                src="image/Products/Footwear.png"
+                alt="Monolith Leather Boots"
+              />
+
+              <div class="product-content">
+                <h3>Footwear</h3>
+                <p>Monolith Leather Boots</p>
+                <span class="price">$650</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- ----- Footer ----- -->
+
+    <footer class="footer container">
+      <div class="row">
+        <div class="footer-brand col-12 col-lg-6">
+          <h2 class="footer-brand-logo">FashionHub</h2>
+
+          <p class="footer-paragraph">
+            High-fashion utility for the modern era. Minimalist aesthetics
+            meeting uncompromising quality.
+          </p>
+
+          <p class="footer-copyright d-none d-lg-block">
+            &copy; 2024 FashionHub. All rights reserved. High-fashion utility
+            for the modern era.
+          </p>
+        </div>
+
+        <div class="support col-4 col-lg-2">
+          <h3>Support</h3>
+
+          <a href="#">FAQ</a>
+          <a href="#">Shipping &amp; Returns</a>
+          <a href="#">Size Guide</a>
+        </div>
+
+        <div class="company col-4 col-lg-2">
+          <h3>Company</h3>
+
+          <a href="#">About</a>
+          <a href="#">Sustainability</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+
+        <div class="connect col-4 col-lg-2">
+          <h3>Connect</h3>
+
+          <div class="connect-icon d-flex align-items-center gap-3 mb-2">
+            <a
+              class="d-flex align-items-center justify-content-center"
+              href="#"
+              aria-label="Website"
+            >
+              <i class="bi bi-globe"></i>
+            </a>
+
+            <a
+              class="d-flex align-items-center justify-content-center"
+              href="#"
+              aria-label="Contact us"
+            >
+              <i class="bi bi-envelope"></i>
+            </a>
+          </div>
+
+          <p>
+            123 Fashion Ave NY, NY 10001<br />
+            Mon-Fri, 9am-6pm
+          </p>
+        </div>
+
+        <div class="col-12 d-lg-none">
+          <p class="footer-copyright footer-copyright-full">
+            &copy; 2024 FashionHub. All rights reserved. High-fashion utility
+            for the modern era.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
