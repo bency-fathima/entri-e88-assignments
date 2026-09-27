@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FashionHub</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Fashionhub.css">
+</head>
+<body>
+
+  <!-- ===== HEADER / NAVBAR ===== -->
+  <header>
+    <nav class="navbar">
+      <a href="#home" class="logo">FashionHub</a>
+
+      <ul class="nav-links">
+        <li><a href="#men">Men</a></li>
+        <li><a href="#women">Women</a></li>
+        <li><a href="#accessories">Accessories</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#footer">Contact</a></li>
+      </ul>
+
+      <div class="nav-icons">
+        <a href="#"><img src="assets/searchicon.svg" alt="Search"></a>
+        <a href="#"><img src="assets/liked.svg" alt="Wishlist"></a>
+        <a href="#"><img src="assets/user.svg" alt="Account"></a>
+        <a href="#" class="cart-icon">
+          <img src="assets/addtocart.svg" alt="Cart">
+          <img src="assets/count2.svg" alt="0" class="cart-count">
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===== HERO ===== -->
+    <section id="home" class="hero" style="background-image: url('assets/bannerImg.jpg');">
+      <div class="hero-overlay">
+        <h1  class="hero-overlay-bg-h1">New Summer Collection</h1>
+        <p class="hero-overlay-bg-p">Discover the definitive high-fashion utility pieces for the modern era. Minimalism meets uncompromising structure.</p>
+        <div class="hero-btns">
+          <a href="#products" class="btn btn-dark">Shop Now</a>
+          <a href="#categories" class="btn btn-outline">Explore Collection</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SHOP BY CATEGORY ===== -->
+    <section id="categories" class="categories">
+      <h2>Shop by Category</h2>
+
+      <div class="category-grid">
+        <a href="#men" class="cat-tile cat-men">
+          <img src="assets/men.jpg" alt="Men">
+          <span class="cat-big">Men</span>
+        </a>
+
+        <div class="cat-right">
+          <a href="#women" class="cat-tile cat-women">
+            <img src="assets/women.jpg" alt="Women">
+            <span class="cat-big" >Women</span>
+          </a>
+          <div class="cat-small-row">
+            <a href="#accessories" class="cat-tile cat-accessories">
+              <img src="assets/accessories.jpg" alt="Accessories">
+              <span class="cat-small">Accessories</span>
+            </a>
+            <a href="#kids" class="cat-tile cat-kids">
+              <img src="assets/kids.jpg" alt="Kids">
+              <span class="cat-small">Kids</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FEATURED PRODUCTS ===== -->
+    <section id="products" class="products">
+      <div class="products-heading">
+        <h2>Featured Products</h2>
+        <a href="#" class="view-all">View All &rarr;</a>
+      </div>
+
+      <div class="product-grid">
+
+        <article class="product-card">
+          <div class="product-img">
+            <img src="assets/outerwear.jpg" alt="Structured Utility Jacket">
+          </div>
+          <p class="product-category">Outerwear</p>
+          <h3 class="product-name">Structured Utility Jacket</h3>
+          <p class="product-price">$450</p>
+        </article>
+
+        <article class="product-card">
+          <div class="product-img">
+            <img src="assets/tops.jpg" alt="Oversized Poplin Shirt">
+          </div>
+          <p class="product-category">Tops</p>
+          <h3 class="product-name">Oversized Poplin Shirt</h3>
+          <p class="product-price">$180</p>
+        </article>
+
+        <article class="product-card">
+          <div class="product-img">
+            <img src="assets/bottoms.jpg" alt="Tailored Wide-Leg Trousers">
+            <span class="badge-new">New</span>
+          </div>
+          <p class="product-category">Bottoms</p>
+          <h3 class="product-name">Tailored Wide-Leg Trousers</h3>
+          <p class="product-price">$280</p>
+        </article>
+
+        <article class="product-card">
+          <div class="product-img">
+            <img src="assets/footwear.jpg" alt="Monolith Leather Boots">
+          </div>
+          <p class="product-category">Footwear</p>
+          <h3 class="product-name">Monolith Leather Boots</h3>
+          <p class="product-price">$650</p>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer id="footer">
+    <div class="footer-grid">
+  
+      <div class="footer-brand">
+        <h3>FashionHub</h3>
+        <p>High-fashion utility for the modern era. Minimalist aesthetics meeting uncompromising quality.</p>
+        <div class="footer-copyright">© 2026 FashionHub. All rights reserved. High-fashion utility for the modern era.</div>
+      </div>
+  
+      <nav class="footer-col">
+        <h5>Support</h5>
+        <ul>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Shipping & Returns</a></li>
+          <li><a href="#">Size Guide</a></li>
+        </ul>
+      </nav>
+  
+      <nav class="footer-col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#">Sustainability</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </nav>
+  
+      <address class="footer-col">
+        <h5>Connect</h5>
+        <div class="footer-icons">
+          <img src="assets/internet.svg" alt="Website">
+          <img src="assets/emailicon.svg" alt="Email">
+        </div>
+        <p>123 Fashion Ave<br>NY, NY 10001</p>
+        <p>Mon-Fri, 8am-8pm</p>
+      </address>
+  
+    </div>
+  </footer>
+
+</body>
+</html>
