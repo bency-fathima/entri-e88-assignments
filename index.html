@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Monsieur+La+Doulaise&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Monsieur+La+Doulaise&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="container-fluid">
+
+            <div class="nav-bar">
+                <div class="row">
+
+                    <div class="col col-lg-4 col-md-4 col-sm-9 brand-head">
+                        <div class="brand">
+                            <h1 class="brand-name"><a href="#">FashionHub</a></h1>
+                        </div>
+                    </div>
+
+
+                    <div class="col col-lg-4 col-md-5 col-sm-3 brand-nav">
+
+                        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+
+
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <!-- Added ms-auto if you want it aligned right, or keep me-auto for left -->
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="#men">Men</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#women">Women</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#accessories">Accessories</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#about">About</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#contact">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </nav>
+                    </div>
+
+
+                    <div class="col col-lg-4 col-md-3 col-sm-12 brand-icon">
+                        <div class="shop-icons">
+                            <a href="#"><img src="icons/search.png" alt="Search"></a>
+                            <a href="#"></a><img src="icons/wishlist.png" alt="Wishlist"></a>
+                            <a href="#"></a><img src="icons/profile.png" alt="User Profile"></a>
+                            <a href="#"></a><img src="icons/cart.png" alt="Shopping Cart"></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+
+
+    <main>
+
+        <div class="container-fluid banner">
+            <div class="banner-layout">
+
+                <div class="banner-textbox">
+                    <h2 class="bnr-heading">New Summer Collection</h2>
+                    <p class="bnr-description">Discover the definitive high-fashion utility pieces for the modern
+                        era.<br>
+                        Minimalism meets uncompromising structure.</p>
+
+                    <div class="button-section">
+                        <a href="#shop-now"><button class="cta-shop-button">Shop Now</button></a>
+                        <a href="#about"><button class="cta-explore-button">Explore Collection</button></a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="container-fluid" id="shop-now">
+            <h4 class="shop-category">Shop by Category</h4>
+
+            <div class="category-section">
+                <div class="box box1" id="men">Men</div>
+                <div class="box box2" id="women">Women</div>
+                <div class="box box3" id="accessories">Accessories</div>
+                <div class="box box4" id="kids">Kids</div>
+            </div>
+        </div>
+
+
+
+        <div class="container-fluid featured-products" id="about">
+            <div class="row">
+                <div class="col">
+                    <h4 class="featured-category">Featured Products</h4>
+
+                </div>
+                <div class="col main-view-all">
+                    <a href="" class="view-all">View All <img src="Icons/arrow.png" alt="View-all"></a>
+                </div>
+            </div>
+
+
+            <div class="row featured-section">
+
+                <div class="col fetr-section">
+                    <article class="fetr-card">
+                        <div class="featured-image">
+                            <img src="Images/Outerwear.png" alt="Outerwear" class="featured-thumbnail">
+                        </div>
+                        <h5>Outerwear</h5>
+                        <h3 class="feature-product-name">Structured Utility Jacket</h3>
+                        <span class="feature-product-price">$450</span>
+                    </article>
+                </div>
+
+
+                <div class="col fetr-section">
+                    <article class="fetr-card">
+                        <div class="featured-image">
+                            <img src="Images/Tops.png" alt="Tops" class="featured-thumbnail">
+                        </div>
+                        <h5>Tops</h5>
+                        <h3 class="feature-product-name">Oversized Poplin Shirt</h3>
+                        <span class="feature-product-price">$180</span>
+                    </article>
+                </div>
+
+                <div class="col fetr-section">
+                    <article class="fetr-card">
+                        <div class="featured-image">
+                            <img src="Images/Bottoms.png" alt="Bottoms" class="featured-thumbnail">
+                        </div>
+                        <h5>Bottoms</h5>
+                        <h3 class="feature-product-name">Tailored Wide-Leg Trousers</h3>
+                        <span class="feature-product-price">$280</span>
+                    </article>
+                </div>
+
+                <div class="col fetr-section">
+                    <article class="fetr-card">
+                        <div class="featured-image">
+                            <img src="Images/Footwear.png" alt="Footwear" class="featured-thumbnail">
+                        </div>
+                        <h5>Footwear</h5>
+                        <h3 class="feature-product-name">Monolith Leather Boots</h3>
+                        <span class="feature-product-price">$650</span>
+                    </article>
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <footer id="contact" class="site-footer">
+
+            <div class="container-fluid">
+
+
+                <div class="row footer-sec">
+
+                    <div class="col col-lg-6 col-md-5 footer-first-col">
+                        <div class="footer-brand">
+                            <h4 class="footer-title">FashionHub</h4>
+                            <p class="footer-content">High-fashion utility for the modern era.<br>
+                                Minimalist aesthetics meeting uncompromising<br>
+                                quality.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="col col-lg-2 col-md-2">
+                        <div class="footer-column">
+                            <h6>Support</h6>
+
+                            <ul>
+                                <li>FAQ</li>
+                                <li>Shipping & Returns</li>
+                                <li>Size Guide</li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <div class="col col-lg-2 col-md-2">
+                        <div class="footer-column" id="company">
+
+                            <h6>Company</h6>
+                            <ul>
+                                <li>About</li>
+                                <li>Sustainability</li>
+                                <li>Terms of Service</li>
+                                <li>Privacy Policy</li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <div class="col col-lg-2 col-md-3">
+                        <div class="footer-column">
+
+                            <h6>Connect</h6>
+                            <div class="Connect-icons">
+                                <span><a href="#"><img src="Icons/web.png" alt=""></a></span>
+                                <span style="margin-left: 10px !important;"><a href="#"><img src="Icons/mail.png"
+                                            alt=""></a></span>
+                                <p>123 Fashion Ave<br>
+                                    NY, NY 10001<br>
+                                    Mon-Fri, 9am-6pm</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+                <div class="footer-copyright">
+                    <p>© 2024 FashionHub. All rights reserved. High-fashion<br>
+                        utility for the modern era.</p>
+                </div>
+
+            </div>
+
+
+
+        </footer>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

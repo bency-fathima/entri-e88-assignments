@@ -1,427 +1,525 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-
+    padding: 0px !important;
+    margin: 0px !important;
+    font-family: Montserrat;
 }
 
-body {
-    font-family: 'Poppins', sans-serif;
-    font-size: 15px;
-    line-height: 1.6;
-    color: #3e3a35;
 
-    background-color: #FAF6F0;
+.container-fluid {
+    padding: 10px 50px !important;
 }
 
-h1,
-h2,
-h3,
-h4 {
-    font-family: 'Playfair Display', serif;
-    color: #1a1510;
-    font-weight: 700;
+.col {
+    align-self: center;
 }
-
 
 .site-header {
-    padding: 24px 0;
-    background-color: #FAF6F0;
+    Background-color: #ffffff;
+    position: sticky;
+    top: 0;
 }
 
-.nav-bar {
-    max-width: 1100px;
-    margin: 0 auto;
-    
-    padding: 0 24px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-/* .brand {
-    display: flex;
-    flex-direction: column;
-} */
-
-.brand-name {
-    font-size: 24px;
+.brand .brand-name a {
+    font-family: Montserrat;
     font-weight: 700;
-}
-
-.brand-tagline {
-    font-size: 12px;
-    font-weight: 400;
-    color: #7A746D;
-    margin-top: 2px;
-}
-
-/* .navigation-menu {
-    display: flex;
-    align-items: center;
-} */
-
-.nav-links {
-    display: flex;
-    gap: 28px;
-
-    list-style: none;
-}
-
-.nav-links li a {
-    font-size: 14px;
-    font-weight: 500;
-    color: #3E3A35;
-
-}
-
-.nav-links a:hover {
-    color: #B95E3C;
-}
-
-
-a {
-    text-decoration: none;
+    font-size: 48px;
     color: black;
+    text-decoration: none;
 }
 
 
-.cta-button {
-    display: inline-block;
-    padding: 10px 24px;
-    border-radius: 50px;
 
+.shop-icons {
+    text-align: end;
+}
+
+ul.nav-links {
+    justify-content: right;
+}
+
+div#navbarNav {
+    background: white;
+    justify-content: right !important;
+
+
+}
+
+.navbar-nav {
+    flex-direction: row;
+    gap: 20px;
+}
+
+
+nav.navbar.navbar-expand-lg.bg-body-tertiary {
+    justify-self: end;
+}
+
+li.nav-item {
+    font-family: Inter;
     font-size: 14px;
-    font-weight: 500;
-    background-color: #B95E3C;
-    color: #FFF;
-    border: 1px solid #B95E3C;
-
-
+    font-weight: 600;
+    color: #5C5F60;
+    text-decoration: none;
 }
 
-.cta-button:hover {
-    background-color: #9C4B2E;
-    border-color: #9C4B2E;
+.shop-icons img {
+    margin: 6px !important;
 }
 
 
 .banner {
-    padding: 40px 0 80px;
-    overflow: hidden;
-}
-
-.banner-layout {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 24px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 48px;
-}
-
-.banner-textbox {
-    max-width: 480px;
-}
-
-.bnr-heading {
-    font-size: 56px;
-    line-height: 1.1;
-
-    margin-bottom: 24px;
-}
-
-.bnr-description {
-    font-size: 17px;
-    color: #5C564E;
-    margin-bottom: 32px;
-    font-weight: 400;
-}
-
-.bnr-phto-wrap {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.banner-phto {
-    width: 100%;
-    max-width: 460px;
-    height: 310px;
-    object-fit: cover;
-    border-radius: 16px;
-}
 
 
-.menu-section {
-    background-color: #F1EAE1;
-    padding: 80px 0;
-    border-top: 1px solid #EAE2D8;
-}
-
-.menu-main {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 24px;
-}
-
-.menu-heading {
-    text-align: center;
-    font-size: 36px;
-    margin-bottom: 54px;
-}
-
-.food-category {
-    margin-bottom: 60px;
-}
-
-
-
-.category-heading {
-    font-size: 30px;
-    font-weight: 600;
-    margin-bottom: 32px;
-    border-bottom: 1px solid #E2D9CE;
-
-    padding-bottom: 12px;
-    display: inline-block;
-    width: 100%;
-}
-
-.food-coll {
-    display: flex;
-    flex-direction: row;
-    gap: 28px;
-}
-
-
-.food-card {
-    flex: 1;
-    background-color: #FAF6F0;
-    border: 1px solid #E0D7CB;
-    border-radius: 14px;
-    padding: 24px;
-    margin: 0;
-
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
- 
-}
-
-.food-card:hover {
-    background-color: rgb(255, 240, 221);
-}
-
-.food-img {
-    width: 100%;
-    height: 160px;
-    border-radius: 8px;
-    overflow: hidden;
-    margin-bottom: 20px;
-}
-
-.dish-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
-
-.food-name {
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 8px;
-    color: #1a1510;
-}
-
-.food-description {
-    font-size: 15px;
-    color: #6E6860;
-    margin-bottom: 16px;
-    line-height: 1.5;
-}
-
-.food-price {
-    font-size: 18px;
-    font-weight: 600;
-    color: #1a1510;
-    margin-top: auto;
+    background:
+        linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.85) 100%),
+        url("Images/Banner.png");
+    height: 1000px;
+    background-size: cover;
+    background-repeat: no-repeat;
 
 }
 
 
-.story-section {
-    padding: 100px 0;
-    background-color: #FAF6F0;
-    position: relative;
-}
 
-.story-layout {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 24px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 24px;
-}
-
-.story-textbox {
-    width: 50%;
-    background-color: #F6EDE2;
-    padding: 48px;
-    border-radius: 16px;
-    position: relative;
-}
-
-.story-badge {
+.cta-shop-button {
+    background-color: black;
+    color: white;
+    font-family: Inter;
     font-size: 14px;
     font-weight: 600;
-    color: #B95E3C;
-    margin-bottom: 12px;
-    display: block;
+    text-decoration: none;
+    border: 2px solid black;
+    padding: 17.5px 32px 18.5px 32px !important;
+    border-radius: 12px;
 }
 
-.story-heading {
-    font-size: 40px;
-    margin-bottom: 20px;
-    line-height: 1.2;
+.cta-explore-button {
+    background-color: transparent;
+    color: white;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    border: 2px solid white;
+    padding: 17.5px 32px 18.5px 32px !important;
+    border-radius: 12px;
 }
 
-.story-body {
-    font-size: 17px;
-    color: #5C564E;
-    line-height: 1.7;
+
+.button-section {
+    margin-top: 30px !important;
+    justify-self: center;
 }
 
 
-.story-photo {
+
+.bnr-heading {
+    background-color: #F9F9F9CC;
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 48px;
+    color: black;
+    text-decoration: none;
+    padding: 8px 24px 8px 24px !important;
+}
+
+
+h2.bnr-heading {
+    text-align: center;
+    justify-self: center;
+}
+
+
+.bnr-description {
+    margin-top: 25px !important;
+    padding: 4px 44.09px 4px 44.09px !important;
+    background-color: #F9F9F9CC;
+    text-align: center;
+    justify-self: center;
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 28.8px;
+}
+
+.container-fluid.banner {
+
+    align-content: center !important;
+}
+
+.shop-category {
+    margin-top: 40px !important;
+    font-family: Montserrat;
+    font-weight: 600 !important;
+    font-size: 24px;
+    line-height: 31.2px;
+    padding-bottom: 5px !important;
+    border-bottom: 2px solid #E2E2E2;
+
+}
+
+.featured-category {
+    margin-top: 40px !important;
+    font-family: Montserrat;
+    font-weight: 600 !important;
+    font-size: 24px;
+    line-height: 31.2px;
+    padding-bottom: 5px !important;
+}
+
+
+.category-section {
+
+    margin-top: 25px !important;
+    display: grid;
+    gap: 24px;
+    height: 95vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "side side head head"
+        "side side card1 card2"
+        "side side card1 card2";
+}
+
+
+.box1 {
+    grid-area: side;
+    background:
+        linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.85) 100%),
+        url("Images/Men.png");
+    border-radius: 12px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.box2 {
+    grid-area: head;
+    background:
+        linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.85) 100%),
+        url("Images/Women.png");
+    border-radius: 12px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.box3 {
+    grid-area: card1;
+    background:
+        linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.85) 100%),
+        url("Images/Accessories.png");
+    border-radius: 12px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.box4 {
+    grid-area: card2;
+    background:
+        linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.85) 100%),
+        url("Images/Kids.png");
+    border-radius: 12px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+.box1,
+.box2 {
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    line-height: 31.2px;
+    align-content: end;
+    padding: 20px !important;
+
+
+}
+
+
+.box3,
+.box4 {
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    line-height: 24px;
+    align-content: end;
+    padding: 20px !important;
+
+
+}
+
+.featured-products {
+    background-color: #F9F9F9;
+    margin: 50px 0px !important;
+    padding-bottom: 50px !important;
+
+}
+
+
+.view-all {
+    text-decoration: none;
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 12px;
+    color: #5C5F60;
+}
+
+.main-view-all {
+    text-align-last: end;
+    align-self: end;
+}
+
+.featured-thumbnail {
+    border-radius: 12px;
+    background-size: cover;
+    background-repeat: no-repeat;
     width: 100%;
-    max-width: 440px;
-    height: 380px;
-    object-fit: cover;
-    border-radius: 14px;
 }
 
+h5 {
+    font-family: Inter;
+    padding-top: 10px !important;
+    font-size: 14px !important;
+    font-weight: 600;
+    line-height: 12px;
+    color: #5C5F60 !important;
+}
+
+.feature-product-name {
+    font-family: Inter;
+    padding-top: 10px !important;
+    font-size: 20px !important;
+    font-weight: 400;
+    line-height: 24px;
+    padding-top: 2px !important;
+    padding-bottom: 10px !important;
+}
+
+span.feature-product-price {
+    font-family: Inter;
+    padding-top: 10px !important;
+    font-size: 18px !important;
+    font-weight: 700;
+    line-height: 24px;
+
+}
+
+.featured-section {
+    display: flex !important;
+    flex-direction: row !important;
+    margin-top: 20px !important;
+    gap: 35px;
+}
+
+.fetr-section {
+    width: 25% !important;
+}
 
 .site-footer {
-    background-color: #2F362F;
-    color: #E2DCD3;
-    padding: 60px 0 24px;
-}
-
-.footer-layout {
-    max-width: 1100px;
-    margin: 0 auto;
-
-    padding: 0 24px 40px;
-    display: flex;
-    flex-direction: row;
-    gap: 40px;
-    border-bottom: 1px solid #444E44;
-}
-
-.footer-column {
-    flex: 1;
-}
-
-.footer-column h4,
-.footer-title {
-    color: #FFF;
-    font-size: 18px;
-    margin-bottom: 18px;
-    font-family: 'Playfair Display', serif;
-}
-
-.footer-column p {
-    font-size: 16px;
-    line-height: 1.6;
-    color: #BBB4AA;
-    margin-bottom: 8px;
-}
-
-.footer-brand .footer-tagline {
-    font-family: 'Playfair Display', serif;
-    margin-top: 4px;
-
-    font-size: 15px;
-
+    margin-bottom: 20px !important;
 }
 
 .footer-copyright {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 24px 24px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 12px !important;
+    line-height: 12px;
+    color: #5C5F60;
+    margin-top: 30px !important;
+}
+
+
+.footer-title {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 32px;
+    color: black;
+}
+
+.footer-content {
+    font-family: Inter;
+    font-size: 16px !important;
+    font-weight: 400 !important;
+    color: #5C5F60;
+    margin-top: 20px !important;
+}
+
+
+.footer-first-col {
+    align-self: self-start;
+}
+
+.col.col-lg-2 {
+    align-self: start;
+}
+
+.footer-column ul {
+    margin-top: 15px !important;
+}
+
+.footer-column ul li {
+    list-style: none;
+    padding-top: 10px !important;
+    font-family: Inter;
+    font-size: 16px !important;
+    font-weight: 400 !important;
+    color: #5C5F60;
+}
+
+.footer-column h6 {
+    font-family: Inter;
     font-size: 14px;
-    color: #8C8479;
+    font-weight: 700;
+    line-height: 12px;
+}
+
+.Connect-icons {
+    padding-top: 30px !important;
+}
+
+.Connect-icons p {
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17px;
+    color: #5C5F60;
+    margin-top: 15px !important;
+}
+
+
+/* mobile screen */
+@media (max-width: 426px) {
+    .brand-icon {
+        display: none;
+    }
+
+    .brand .brand-name a {
+        font-size: 35px;
+    }
+
+    .container-fluid {
+        padding: 10px 20px !important;
+    }
+
+    nav.navbar.navbar-expand-lg.bg-body-tertiary {
+
+        background-color: white !important;
+    }
+
+    .bnr-heading {
+        font-size: 35px;
+    }
+
+    .bnr-description {
+        font-size: 14px !important;
+        line-height: 19px;
+    }
+
+
+    .featured-section {
+        display: flex !important;
+        flex-direction: column !important;
+        margin-top: 20px !important;
+
+    }
+
+    .fetr-section {
+        width: 100% !important;
+
+    }
+
+    .category-section {
+        display: flex;
+        flex-direction: column !important;
+        height: 150vh !important;
+    }
+
+    .box.box1,
+    .box.box2,
+    .box.box3,
+    .box.box4 {
+        height: 350px !important;
+        width: 100% !important;
+    }
+
+    .container-fluid.featured-products {
+        margin-top: 15px !important;
+    }
+
+
+    .footer-sec {
+        display: flex;
+        flex-direction: column !important;
+    }
+
+
+    .footer-column {
+        margin-top: 18px !important;
+    }
+
+    .footer-column ul li {
+        padding-top: 1px !important;
+
+    }
+
+    .Connect-icons {
+        padding-top: 10px !important;
+    }
+
+
+    .footer-brand .footer-content {
+        font-size: 15px !important;
+
+    }
 }
 
 
 
-@media (max-width: 768px) {
-    .nav-bar {
-        flex-direction: column;
-        gap: 20px;
+/* lap screen */
+@media (max-width: 1025px) {
+
+    .brand .brand-name a {
+        font-size: 35px;
     }
 
-    .brand {
-        text-align: center;
+    .container-fluid.banner {
+        height: 90vh;
     }
 
-    .nav-links {
-        gap: 20px;
+    .cta-shop-button,
+    .cta-explore-button {
+        padding: 8.5px 15px 8.5px 15px !important;
     }
 
-    .banner-layout {
+}
+
+/* Tablet screen */
+@media (max-width: 769px) {
+
+    .bnr-description {
+        font-size: 17px;
+    }
+
+    .category-section {
         display: flex;
-        flex-direction: column;
-        text-align: center;
+        flex-direction: row;
+        height: 25vh;
+        margin-bottom: 30px !important;
     }
 
-    .banner-textbox {
-        max-width: 100%;
+    .box {
+        height: 200px !important;
+        width: 25% !important;
     }
 
-    .food-coll {
-        
-        flex-direction: column;
-        gap: 28px;
+    .feature-product-name {
+        font-size: 15px !important;
+        font-weight: 500;
     }
 
-    .story-layout {
-        flex-direction: column;
-    }
 
-    .story-textbox {
-        width: 100%;
-
-        padding: 24px;
-    }
-
-    .story-photo-wrap {
-        width: 100%;
-        justify-content: center;
-    }
-
-    .story-photo {
-        width: 100%;
-        height: 240px;
-    }
-
-    .footer-layout {
-        flex-direction: column;
-        gap: 32px;
-    }
-
-    .footer-copyright {
-        flex-direction: column;
-        gap: 12px;
-        text-align: center;
-    }
 }
