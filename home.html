@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page - FashionHub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        .container {
+            width: 1280px;
+            height: 2400px;
+            margin-left: 50px;
+        }
+
+        /* header section */
+        .head {
+            background-color: #F9F9F9;
+            width: 1280px;
+            height: 80px;
+            border-bottom: 1px;
+            border-color: #CFC4C5;
+            display: flex;
+            flex-direction: row;
+
+        }
+
+        .heading1 {
+            width: 250px;
+            height: 45px;
+            margin-top: 10px;
+            margin-left: 5px;
+
+        }
+
+        .nav {
+            display: flex;
+            justify-content: center;
+            padding-right: 50px;
+            padding-left: 50px;
+            margin-left: 50px;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        ul li a {
+
+            display: block;
+            color: #5c5f60;
+            padding: 10px;
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            font-family: poppins;
+        }
+
+
+        .icons {
+            display: flex;
+            align-items: center;
+            padding-top: 5px;
+            padding-right: 10px;
+            margin-left: 200px;
+            display: flex;
+            justify-content: right;
+
+        }
+
+        /* header section endss */
+        /* hero section startss */
+        .hero {
+            width: 1280px;
+            height: 800px;
+            background-image: url(images/Hero.svg);
+        }
+
+        .newsum {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 300px;
+            background-color: #ffff;
+            background-image: url(images/Hero.svg);
+
+        }
+
+        .explore {
+            margin-left: 70px;
+        }
+
+        /* hero section endss */
+        /* shop by category starts */
+        .shop {
+            width: 1200px;
+            padding-left: 50px;
+        }
+
+        .shop .heading2 {
+            padding-bottom: 12px;
+            border-bottom: 1px solid #e2e2e2;
+            font-size: 24px;
+            font-weight: 600;
+            font-family: poppins;
+        }
+
+        .shop-grid {
+            display: grid;
+            grid-template-columns: 2fr 2fr 2fr;
+            grid-template-areas:
+                "M W W"
+                "M A K";
+            gap: 10px;
+            padding: 15px 0;
+        }
+
+        .man {
+            grid-area: M;
+        }
+
+        .women {
+            grid-area: W;
+        }
+
+        .accessories {
+            grid-area: A;
+        }
+
+        .kids {
+            grid-area: K;
+        }
+
+        .card {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            color: #fff;
+        }
+
+        .shop-grid img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border: 1px solid #e9e9e9;
+            border-radius: 12px;
+
+        }
+
+
+        .text {
+            position: absolute;
+            left: 10px;
+            bottom: 10px;
+            font-size: 16px;
+            font-weight: 500;
+            font-family: poppins;
+        }
+
+        /* shop by category ends */
+        /* featured products starts */
+        .featured {
+            background-color: #F9F9F9;
+            width: 1280px;
+            /* height: 600px; */
+        }
+
+        .heading3 {
+            width: 1200px;
+            padding-left: 50px;
+            padding-right: 20px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .featured_container {
+            width: 1200px;
+            padding-left: 28px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            /* margin-right: 100px; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-evenly;
+
+        }
+
+        .box {
+            border-radius: 10px;
+
+        }
+
+        .box1 {
+            display: block;
+        }
+
+        /* featured products ends */
+        /* footer starts */
+
+        .footer {
+            width: 1280px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            /* margin-right: 100px; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .footer_box1 {
+            width: 300px;
+        }
+
+        .footer_box1 {
+            margin-right: 100px;
+        }
+
+        /* footer ends */
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!--header section starts-->
+        <section class="head">
+            <div class="header_img">
+                <img src="images/logo.svg" class="heading1">
+            </div>
+            <div class="nav">
+                <nav class="navbar">
+
+                    <ul>
+                        <li class="nav_item">
+                            <a class="a1" href="#">Men</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="a2" href="#">Women</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="a3" href="#">Accessories</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="a4" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="a5" href="#">Contact</a>
+                        </li>
+                    </ul>
+
+                </nav>
+
+                <div class="icons">
+                    <div>
+                        <a href="#"><img src="images/search.svg"></a>
+                    </div>
+                    <div>
+                        <a href=""><img src="images/wishlist.svg"></a>
+                    </div>
+                    <div>
+                        <a href=""><img src="images/profile.svg"></a>
+                    </div>
+                    <div class="cart">
+                        <a href=""><img src="images/cart.svg"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--heading section endss-->
+        <!--hero section starts-->
+        <div>
+            <div class="hero">
+                <div class="newsum">
+                    <div>
+                        <div>
+                            <h1><img src="images/newsummer.svg"></h1>
+                        </div>
+                        <div>
+                            <p><img src="images/Text.svg"></p>
+                        </div>
+                        <div><a href="" class="explore"><img src="images/explore.svg"></a>
+                            <a href=""><img src="images/shopnow.svg"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--hero section endsss-->
+
+
+
+
+        <!--shop by category starts-->
+        <section class="shop">
+            <h2 class="heading2">Shop by Category</h2>
+
+            <div class="shop-grid">
+                <a href="#" class="man card">
+                    <img class="d-block w-100" src="images/men.svg" />
+                    <span class="text">Men</span>
+                </a>
+
+                <a href="#" class="women card ">
+                    <img class="d-block w-100" src="images/women.svg" />
+                    <span class="text">Women</span>
+                </a>
+
+                <a href="#" class="accessories card">
+                    <img class="d-block w-100" src="images/accessories.svg" />
+                    <span class="text">Accessories</span>
+                </a>
+
+                <a href="#" class="kids card">
+                    <img class="d-block w-100" src="images/kids.svg" />
+                    <span class="text">Kids</span>
+                </a>
+            </div>
+        </section>
+        <!--shop by category endss-->
+        <!--featured products starts-->
+
+        <section class="featured">
+            <div class="heading3">
+                <img src="images/featured.svg">
+                <a href="#"><img src="images/viewall.svg"></a>
+            </div>
+            <div class="featured_container">
+                <div class="box1">
+                    <div><img src="images/coat.svg" class="box"></div>
+                    <div><img src="images/Outerwear.svg"></div>
+                    <div><img src="images/Structured Utility Jacket.svg"></div>
+                    <div><img src="images/450price.svg"></div>
+                </div>
+                <div class="box2">
+                    <div><img src="images/shirts.svg" class="box"></div>
+                    <div><img src="images/Tops.svg"></div>
+                    <div><img src="images/Oversized Poplin Shirt.svg"></div>
+                    <div><img src="images/$180.svg"></div>
+                </div>
+                <div class="box3">
+                    <div><img src="images/pants.svg" class="box"></div>
+                    <div><img src="images/Bottoms.svg"></div>
+                    <div><img src="images/Tailored Wide-Leg Trousers.svg"></div>
+                    <div><img src="images/$280.svg"></div>
+                </div>
+                <div class="box4">
+                    <div><img src="images/Footwear.svg" class="box"></div>
+                    <div><img src="images/shoes.svg"></div>
+                    <div><img src="images/Monolith Leather Boots (1).svg"></div>
+                    <div><img src="images/$650.svg"></div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!--featured products ends-->
+    <!--footer starts-->
+    <footer class="footer">
+        <div class="footer_box1">
+            <div><img src="images/fashion.svg" class="box"></div>
+            <div><img src="images/fashiondes.svg"></div>
+            <div><img src="images/para.svg"></div>
+        </div>
+        <div class="footer_box2">
+            <div><img src="images/support.svg" class="box"></div>
+            <div><a href="#"><img src="images/Link → FAQ.svg"></a></div>
+            <div><a href="#"><img src="images/Shipping & Returns.svg"></a></div>
+            <div><a href="#"><img src="images/Link → Size Guide.png"></a></div>
+        </div>
+        <div class="footer_box3">
+            <div><img src="images/company.svg" class="box"></div>
+            <div><a href="#"><img src="images/about.svg"></a></div>
+            <!-- <div><a href="#"><img src="images/Sustainability.svg"></a></div> -->
+            <div><a href="#"><img src="images/Privacy Policy.svg"></a></div>
+        </div>
+        <div class="footer_box4">
+            <div><img src="images/Connect.svg" class="box"></div>
+
+            <div><a href=""><img src="images/Icon2glb.svg"></a></div>
+            <div><a href=""><img src="images/Iconmsg.svg"></a></div>
+            <div><img src="images/123para.svg"></div>
+
+        </div>
+
+    </footer>
+    <!--footer ends-->
+
+</body>
+
+</html>
