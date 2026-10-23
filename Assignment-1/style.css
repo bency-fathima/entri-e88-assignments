@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #fffaf3;
+  color: #333333;
+  line-height: 1.7;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display", serif;
+}
+
+.banner {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(50%);
+}
+
+header {
+  position: relative;
+  height: 325px;
+  overflow: hidden;
+}
+
+.header-content {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translateY(-50%);
+  color: white;
+}
+
+header p {
+  font-size: 1.1rem;
+  color: #ffe8c8;
+  margin-bottom: 15px;
+}
+
+header h1 {
+  font-size: 3.5rem;
+  color: #ffffff;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 500;
+  display: inline-block;
+  transition:
+    transform 0.3s ease,
+    color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+nav a:hover {
+  color: #f4b860;
+  transform: translateY(-5px);
+}
+
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 50px 20px;
+}
+
+.menu-grid {
+  display: Flex;
+  gap: 22px;
+}
+
+.menu-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.menu-card {
+  background-color: #ffffff;
+  border: 1px solid #ead8c0;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 5px;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.menu-card p {
+  color: #666666;
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+}
+
+.menu-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+
+h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  color: #7b2d26;
+  text-align: center;
+}
+
+.menu-category h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #f4b860;
+  margin: 10px auto 0;
+}
+
+.card-content {
+  padding: 22px;
+}
+
+section {
+  padding: 22px 0;
+}
+
+.price {
+  color: #d47b28;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+#about {
+  background-color: #f9ead8;
+  padding: 45px 25px;
+  margin-top: 20px;
+  border-radius: 12px;
+  text-align: center;
+  line-height: 1.9;
+}
+
+#about p {
+  max-width: 750px;
+  margin: 0 auto;
+  color: #4f4f4f;
+}
+
+footer {
+  background-color: rgb(61, 31, 27);
+  color: #ffffff;
+  text-align: center;
+  padding: 30px 20px;
+  line-height: 1.9;
+}
+
+footer h3 {
+  font-size: 1.4rem;
+  margin-bottom: 8px;
+}
+
+footer p {
+  color: rgb(245, 222, 208);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+    header {
+    height: 280px;
+  }
+
+  .banner {
+    height: 100%;
+  }
+
+  .header-content {
+    top: 50%;
+    left: 20px;
+    right: 20px; 
+    text-align: center;
+  }
+  header h1 {
+    font-size: 2.3rem;
+  }
+
+  header p {
+    font-size: 0.9rem;
+    margin-bottom: 12px;
+  }
+
+  main {
+    padding: 30px 15px;
+  }
+
+  .menu-grid {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
