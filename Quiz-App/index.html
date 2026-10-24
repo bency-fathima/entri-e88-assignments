@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Quiz App</title>
+</head>
+
+<body>
+
+    <script>
+
+        const questions = [{
+            qstn: "Which keyword is used to declare a variable that can be reassigned?",
+            options: ["const", "let", "static", "define"],
+            answer: "let"
+        }, {
+            qstn: "What is the output of typeof 'Hello'?",
+            options: ["text", "string", "char", "object"],
+            answer: "string"
+        }, {
+            qstn: "Which operator checks both value and type?",
+            options: ["==", "=", "===", "!="],
+            answer: "==="
+        }, {
+            qstn: "What is the output of 5 + '3'?",
+            options: ["8", "53", "error", "NaN"],
+            answer: "53"
+        }, {
+            qstn: "Which method adds an element to the end of an array?",
+            options: ["pop()", "shift()", "push()", "unshift()"],
+            answer: "push()"
+        }, {
+            qstn: "Which symbol is used for a single-line comment in JavaScript?",
+            options: ["/**/", "//", "/*", "##"],
+            answer: "//"
+        }, {
+            qstn: "What does a function return if there is no return statement?",
+            options: ["null", "0", "undefined", "false"],
+            answer: "undefined"
+        }, {
+            qstn: "Which method selects the first element matching a CSS selector?",
+            options: ["getElementByClaa()", "querySelector()", "queryAll()", "selectElement()"],
+            answer: "querySelector()"
+        }]
+
+        let score = 0;
+
+        function questionAndAnswer(index) {
+            qOne = questions[index].qstn
+            const qstnOne = document.createElement("p")
+            qstnOne.textContent = qOne
+            document.body.appendChild(qstnOne)
+
+            const correctAnswer = questions[index].answer;
+
+            const array = [];
+
+
+
+            opOne = questions[index].options
+            opOne.forEach((button) => {
+                const optionOne = document.createElement("button")
+                optionOne.innerHTML = button
+                optionOne.style.margin = '5px'
+                document.body.appendChild(optionOne)
+
+                array.push(optionOne)
+
+                const whenClicks = optionOne;
+                whenClicks.addEventListener('click', function () {
+                    const correctAnswer = questions[index].answer
+                    if (whenClicks.textContent === correctAnswer) {
+                        whenClicks.style.backgroundColor = "green";
+
+                        score++;
+                        console.log(score)
+
+                    } else {
+                        whenClicks.style.backgroundColor = "red"
+                        array.forEach((button) => {
+                            if (button.textContent === correctAnswer) {
+                                button.style.backgroundColor = "green"
+                            }
+                        })
+
+                    }
+
+                    const nextQstn = document.createElement("button")
+                    nextQstn.innerHTML = "Next Question"
+                    nextQstn.style.marginLeft = "30px"
+                    document.body.appendChild(nextQstn)
+                    nextQstn.addEventListener('click', () => {
+                        questionAndAnswer(index + 1)
+                    })
+
+
+                    const lastQstn = questions[7].options
+                    if (opOne === lastQstn) {
+                        const scoreMsg = document.createElement("h2")
+                        scoreMsg.textContent = `You Scored ${score} out of 8.`
+                        document.body.appendChild(scoreMsg)
+
+                        nextQstn.remove()
+
+                        const feedback = document.createElement("h3")
+                        if (score >= 7) {
+                            feedback.textContent = "Excellent, Keep up the great work!"
+                        } else if (score >= 4) {
+                            feedback.textContent = "Good effort, Keep Practicing!"
+                        } else {
+                            feedback.textContent = "Keep trying, Improve your score for next time."
+                        }
+                        document.body.appendChild(feedback)
+
+                        const restartBtn = document.createElement("button")
+                        restartBtn.innerHTML = "Restart Quiz"
+                        document.body.appendChild(restartBtn);
+
+                        restartBtn.addEventListener('click', () => {
+                            score = 0;
+                            document.body.innerHTML = ""
+                            questionAndAnswer(0);
+                        })
+                    }
+
+
+
+                })
+            })
+        }
+
+        questionAndAnswer(0)
+
+    </script>
+
+</body>
+
+</html>
