@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopHub | Shop all</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="../Style/shopCategory.css">
+    <link rel="stylesheet" href="../Style/common.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="headerMain">
+
+            <div class="logo"><a href="../index.html">
+                    <h1>ShopHub</h1>
+                </a></div>
+
+            <div class="SearchBar">
+                <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                <input type="search" id="searchInput" placeholder="Search products..." autocomplete="off" aria-label="Search products">
+                <button id="searchBtn" type="button">Search</button>
+                <div class="searchDropdown" id="searchDropdown"></div>
+            </div>
+
+            <div class="navIcon">
+                <a class="wishlist" href="../Components/wishlist.html"><i class="fa-regular fa-heart"></i><span>Wishlist</span></a>
+                <a class="Account" href=""><i class="fa-solid fa-user"></i><span>Profile</span></a>
+                <a class="Cart" href="cart.html"><i class="fa-solid fa-cart-shopping"></i><span>Cart <span
+                            id="cartItemCount">0</span></span>
+                </a>
+            </div>
+
+        </div>
+        <nav class="MainNavigation">
+            <article>
+                <a href="../index.html"><button id="trending">Home</button></a>
+                <a href="shopCategory.html"><button id="All" type="button">Shop all</button></a>
+                <a href="shopCategory.html"><button id="newArrival" type="button">New arrivals</button></a>
+                <a href="shopCategory.html"><button id="bestSeller" type="button">Best sellers</button></a>
+                <a href="shopCategory.html"><button id="deals" type="button">Deals</button></a>
+            </article>
+        </nav>
+
+    </header>
+    <main class="container categoryLayout">
+        <section class="shopHeaderSection">
+            <div class="pageBreadcrumb">
+                <h6>Find your next favourite</h6>
+                <h1>Shop all products</h1>
+                <p>Browse quality picks for every part of your day.</p>
+            </div>
+        </section>
+
+        <section class="productToolbar">
+            <h2>Explore products</h2>
+            <article class="productSort">
+                <label for="collectionFilter">Sort by:</label>
+                <select id="collectionFilter" disabled>
+                    <option value="trending">Trending</option>
+                    <option value="bestSeller">Best Sellers</option>
+                    <option value="newArrival">New Arrivals</option>
+                </select>
+            </article>
+        </section>
+
+        <section class="categorySidebar">
+            <div class="mainCategoriesCard">
+                <button id="Electronics">Electronics</button>
+                <button id="Clothing">Clothing</button>
+                <button id="Footwear">Footwear</button>
+                <button id="Books">Books</button>
+            </div>
+        </section>
+
+        <section class="productSection">
+
+            <div class="shopCategoryGrid"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 ShopHub. All rights reserved.</p>
+    </footer>
+
+    <script src="../main.js"></script>
+</body>
+
+</html>

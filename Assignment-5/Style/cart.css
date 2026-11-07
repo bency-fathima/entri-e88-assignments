@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* HeaderSection */
+.headerMain {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+    background: #ffffff;
+    border-bottom: 2px solid #dbeafe;
+    box-shadow: 0 2px 8px rgba(37, 99, 235, 0.06);
+    box-sizing: border-box;
+}
+
+.SearchBar {
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 25%;
+}
+
+.SearchBar input {
+    width: 100%;
+    padding: 12px 100px 12px 30px;
+    border-radius: 10px;
+}
+
+.SearchBar button {
+    position: absolute;
+    right: 5px;
+    padding: 8px 15px;
+    border-radius: 8px;
+}
+
+.SearchBar i {
+    position: absolute;
+    left: 10px;
+    top: 14px;
+}
+
+.logo,
+.navIcon {
+    display: flex;
+    padding: 30px;
+    gap: 20px;
+}
+
+.navIcon span {
+    display: block;
+    position: relative;
+}
+
+#cartItemCount {
+    position: absolute;
+    top: -32px;
+    right: 0;
+    background-color: #2563eb;
+    color: #ffffff;
+    padding: 3px 7px;
+    border-radius: 50%;
+    font-size: 12px;
+}
+
+
+/* MainNavigation */
+
+.MainNavigation article {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    background: #eff6ff;
+}
+
+.MainNavigation article button {
+    padding: 12px 20px;
+    background: transparent;
+    border: none;
+    border-radius: 8px;
+    color: #1e3a8a;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+
+.MainNavigation button:hover,
+.MainNavigation button.active {
+    background: #2563eb;
+    color: white;
+    border-color: #2563eb;
+}
+
+
+/* cartMain */
+
+
+
+.cartMain {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.productCard {
+   display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "productImages productTitle productTitle productTitle"
+        "productImages quantityBtn productPricing dltBtn";
+    gap: 20px;
+
+}
+
+.productImages {
+    grid-area: productImages;
+}
+
+.productTitle {
+    grid-area: productTitle;
+}
+
+
+.productPricing {
+    grid-area: productPricing;
+}
+
+
+.dltBtn {
+    grid-area: dltBtn;
+    width: 42px;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff0f0;
+    color: #e53935;
+    border: none;
+    border-radius: 12px;
+    font-size: 17px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.dltBtn:hover {
+    background: #e53935;
+    color: white;
+    transform: scale(1.08);
+}
+
+.dltBtn:active {
+    transform: scale(0.95);
+}
+
+.dltBtn i {
+    pointer-events: none;
+}
+
+
+
+
+/* productImages */
+
+.productImages {
+    position: relative;
+}
+
+.wishlistBtn .fa-heart {
+    position: absolute;
+    right: 15px;
+    bottom: 200px;
+    color: red;
+    font-size: 16px;
+}
+
+.productImages img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 8px;
+}

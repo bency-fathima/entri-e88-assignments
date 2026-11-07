@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Out of Stock</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="../Style/error.css">
+    <link rel="stylesheet" href="../Style/common.css">
+</head>
+<body>
+    <header>
+        <div class="headerMain">
+
+            <div class="logo"><a href="../index.html">
+                    <h1>ShopHub</h1>
+                </a></div>
+
+            <div class="SearchBar">
+                <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                <input type="search" id="searchInput" placeholder="Search products..." autocomplete="off" aria-label="Search products">
+                <button id="searchBtn" type="button">Search</button>
+                <div class="searchDropdown" id="searchDropdown"></div>
+            </div>
+
+            <div class="navIcon">
+                <a class="wishlist" href="../Components/wishlist.html"><i class="fa-regular fa-heart"></i><span>Wishlist</span></a>
+                <a class="Account" href=""><i class="fa-solid fa-user"></i><span>Profile</span></a>
+                <a class="Cart" href="cart.html"><i class="fa-solid fa-cart-shopping"></i><span>Cart <span
+                            id="cartItemCount">0</span></span>
+                </a>
+            </div>
+
+        </div>
+        <nav class="MainNavigation">
+            <article>
+                <a href="../index.html"><button id="trending">Home</button></a>
+                <a href="shopCategory.html"><button id="All" type="button">Shop all</button></a>
+                <a href="shopCategory.html"><button id="newArrival" type="button">New arrivals</button></a>
+                <a href="shopCategory.html"><button id="bestSeller" type="button">Best sellers</button></a>
+                <a href="shopCategory.html"><button id="deals" type="button">Deals</button></a>
+            </article>
+        </nav>
+
+    </header>
+
+    <main class="errorContainer">
+        <div class="errorIcon">!</div>
+
+        <h1>Out of Stock</h1>
+
+        <p>
+            Sorry, this product is currently unavailable.
+            Please check back later.
+        </p>
+
+        <a href="../index.html">Go back home</a>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 ShopHub. All rights reserved.</p>
+    </footer>
+    <script src="../main.js"></script>
+</body>
+</html>

@@ -1,0 +1,252 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    margin: 30px 5%;
+}
+
+/* HeaderSection */
+.headerMain {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+    background: #ffffff;
+    border-bottom: 2px solid #dbeafe;
+    box-shadow: 0 2px 8px rgba(37, 99, 235, 0.06);
+    box-sizing: border-box;
+}
+
+.SearchBar {
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 25%;
+}
+
+.SearchBar input {
+    width: 100%;
+    padding: 12px 100px 12px 30px;
+    border-radius: 10px;
+}
+
+.SearchBar button {
+    position: absolute;
+    right: 5px;
+    padding: 8px 15px;
+    border-radius: 8px;
+}
+
+.SearchBar i {
+    position: absolute;
+    left: 10px;
+    top: 14px;
+}
+
+.logo,
+.navIcon {
+    display: flex;
+    padding: 30px;
+    gap: 20px;
+}
+
+.navIcon span {
+    display: block;
+    position: relative;
+}
+
+
+.navIcon a:nth-child(1) i {
+    padding-left: 17px;
+}
+
+.navIcon a:nth-child(2) i {
+    padding-left: 10px;
+}
+
+.navIcon a:nth-child(3) i {
+    padding-left: 2px;
+}
+
+
+#cartItemCount {
+    position: absolute;
+    top: -32px;
+    right: 0;
+    background-color: #2563eb;
+    color: #ffffff;
+    padding: 3px 7px;
+    border-radius: 50%;
+    font-size: 12px;
+}
+
+
+/* MainNavigation */
+
+.MainNavigation article {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    background: #eff6ff;
+}
+
+.MainNavigation article button {
+    padding: 12px 20px;
+    background: transparent;
+    border: none;
+    border-radius: 8px;
+    color: #1e3a8a;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+
+.MainNavigation button:hover,
+.MainNavigation button.active {
+    background: #2563eb;
+    color: white;
+    border-color: #2563eb;
+}
+
+/* HeroBannerSection */
+.heroBannerSection {
+    position: relative;
+}
+
+.heroBannerSection img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.heroBannerSection .heroContent {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+}
+
+/* ProductsSection */
+.productsGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    width: 100%;
+    box-sizing: border-box;
+
+}
+
+.productImages {
+    position: relative;
+}
+
+.wishlistBtn .fa-heart {
+    position: absolute;
+    right: 15px;
+    bottom: 195px;
+    color: red;
+    font-size: 16px;
+}
+
+.productImages img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.ProductsSection a {
+    display: flex;
+    justify-content: right;
+}
+
+
+
+
+/* CategoriesSection */
+.mainCategoriesCard {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 15px;
+
+}
+
+.mainCategoriesCard button {
+    padding: 30px;
+}
+
+/* ShoppingBenefits */
+.shoppingBenefits {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    background-color: azure;
+}
+
+.shoppingBenefits article {
+    background-color: azure;
+}
+
+
+/* Footer */
+footer {
+    background: linear-gradient(135deg, #0f172a, #1e40af, #2563eb);
+    color: #ffffff;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 40px;
+}
+
+
+.SearchBar {
+    position: relative;
+}
+
+.searchDropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    z-index: 1000;
+    display: none;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.searchItem {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.searchItem:hover {
+    background: #f2f2f2;
+}
+
+.searchItem img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+}
+
+.searchDropdown p {
+    padding: 10px;
+}

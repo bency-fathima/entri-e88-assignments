@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopHub | Your cart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="../Style/cart.css">
+    <link rel="stylesheet" href="../Style/common.css">
+
+</head>
+
+<body>
+
+    <header>
+        <div class="headerMain">
+
+            <div class="logo"><a href="../index.html">
+                    <h1>ShopHub</h1>
+                </a></div>
+
+            <div class="SearchBar">
+                <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                <input type="search" id="searchInput" placeholder="Search products..." autocomplete="off" aria-label="Search products">
+                <button id="searchBtn" type="button">Search</button>
+                <div class="searchDropdown" id="searchDropdown"></div>
+            </div>
+
+            <div class="navIcon">
+                <a class="wishlist" href="wishlist.html"><i class="fa-regular fa-heart"></i><span>Wishlist</span></a>
+                <a class="Account" href=""><i class="fa-solid fa-user"></i><span>Profile</span></a>
+                <a class="Cart" href="cart.html"><i class="fa-solid fa-cart-shopping"></i><span>Cart <span
+                            id="cartItemCount">0</span></span>
+                </a>
+            </div>
+
+        </div>
+        <nav class="MainNavigation">
+            <article>
+                <a href="../index.html"><button id="trending" type="button">Home</button></a>
+                <a href="../Components/shopCategory.html"> <button id="All">Shop All</button></a>
+                <a href="../Components/shopCategory.html"> <button id="newArrival">New Arrivals</button></a>
+                <a href="../Components/shopCategory.html"> <button id="bestSeller">bestSeller</button></a>
+                <a href=""> <button id="deals">Deals</button></a>
+            </article>
+        </nav>
+
+    </header>
+
+    <main class="container">
+
+        <div class="cartMain">
+            <h1>Your cart</h1>
+            <div class="cartGrid"></div>
+            <aside class="cartSummary">
+                <h2>Order summary</h2>
+                <p><span>Items</span><span id="summaryItemCount">0</span></p>
+                <p><span>Subtotal</span><span id="summarySubtotal">₹0</span></p>
+                <p><span>Shipping</span><span id="summaryShipping">Free</span></p>
+                <div class="summaryTotal">
+                    <strong>Total</strong>
+                    <strong id="summaryTotal">₹0</strong>
+                </div>
+                <p class="shippingNote">Free shipping on orders above ₹500.</p>
+                <a class="continueShopping" href="shopCategory.html">Continue shopping</a>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <p>&copy; 2026 ShopHub. All rights reserved.</p>
+    </footer>
+    <script src="../main.js"></script>
+</body>
+
+</html>

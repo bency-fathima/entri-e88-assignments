@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopHub | Discover everyday favourites</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="Style/index.css">
+    <link rel="stylesheet" href="Style/common.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="headerMain">
+
+            <div class="logo"><a href="index.html">
+                    <h1>ShopHub</h1>
+                </a></div>
+
+            <div class="SearchBar">
+                <span><i class="fa-solid fa-magnifying-glass"></i></span>
+
+                <input type="search" id="searchInput" placeholder="Search products..." autocomplete="off" aria-label="Search products">
+
+                <button id="searchBtn" type="button">Search</button>
+
+                <div class="searchDropdown" id="searchDropdown"></div>
+            </div>
+
+            <div class="navIcon">
+                <a class="wishlist" href="./Components/wishlist.html"><i
+                        class="fa-regular fa-heart"></i><span>Wishlist</span></a>
+                <a class="Account" href=""><i class="fa-solid fa-user"></i><span>Profile</span></a>
+                <a class="Cart" href="./Components/cart.html"><i class="fa-solid fa-cart-shopping"></i><span>Cart <span
+                            id="cartItemCount">0</span></span>
+                </a>
+            </div>
+
+        </div>
+        <nav class="MainNavigation">
+            <article>
+                <a href="index.html"><button id="trending">Home</button></a>
+                <a href="Components/shopCategory.html"> <button id="All">Shop All</button></a>
+                <a href="Components/shopCategory.html"> <button id="newArrival">New Arrivals</button></a>
+                <a href="Components/shopCategory.html"> <button id="bestSeller">Best sellers</button></a>
+                <a href=""> <button id="deals">Deals</button></a>
+            </article>
+        </nav>
+
+    </header>
+
+    <main class="container">
+        <section class="heroBannerSection">
+            <img src="image/hero.png" alt="Latest shopping offers">
+
+            <div class="heroContent">
+                <h1>Discover the Latest Trends</h1>
+                <p>Shop fashion, electronics and more at unbeatable prices.</p>
+                <a class="heroButton" id="shopNowButton" href="Components/shopCategory.html">Shop Now</a>
+            </div>
+        </section>
+
+        <section class="shoppingBenefits">
+            <article>
+                <h3>Free Shipping</h3>
+                <p>On orders above ₹500</p>
+            </article>
+
+            <article>
+                <h3>Secure Payment</h3>
+                <p>100% secure checkout</p>
+            </article>
+
+            <article>
+                <h3>Easy Returns</h3>
+                <p>Hassle-free returns</p>
+            </article>
+
+            <article>
+                <h3>24/7 Support</h3>
+                <p>Always here to help</p>
+            </article>
+        </section>
+
+        <section class="categoriesSection">
+            <h2>Shop by category</h2>
+            <article class="mainCategoriesCard extraName">
+                <button id="Electronics">Electronics</button>
+                <button id="Clothing">Clothing</button>
+                <button id="Footwear">Footwear</button>
+                <button id="Books">Books</button>
+
+            </article>
+        </section>
+        <section class="ProductsSection">
+            <h2>Trending products</h2>
+            <a href="Components/shopCategory.html">View all</a>
+            <div class="productsGrid"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 ShopHub. All rights reserved.</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
