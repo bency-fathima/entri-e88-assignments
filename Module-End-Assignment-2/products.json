@@ -1,0 +1,110 @@
+[
+    {
+        "id": 1,
+        "name": "Wireless Headphones",
+        "category": "Electronics",
+        "price": 1999,
+        "originalPrice": 2999,
+        "rating": 4.5,
+        "imageUrl": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=400&q=80"
+    },
+    {
+        "id": 2,
+        "name": "Smart Watch",
+        "category": "Electronics",
+        "price": 2499,
+        "originalPrice": 3999,
+        "rating": 4.7,
+        "imageUrl": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=400&q=80"
+    },
+    {
+        "id": 3,
+        "name": "Bluetooth Speaker",
+        "category": "Electronics",
+        "price": 1499,
+        "originalPrice": 2499,
+        "rating": 4.3,
+        "imageUrl": "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?auto=format&fit=crop&w=400&q=80"
+    },
+    {
+        "id": 4,
+        "name": "Men's T-Shirt",
+        "category": "Clothing",
+        "price": 499,
+        "originalPrice": 999,
+        "rating": 4.2,
+        "imageUrl": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=400&q=80"
+    },
+    {
+        "id": 5,
+        "name": "Denim Jacket",
+        "category": "Clothing",
+        "price": 1299,
+        "originalPrice": 2199,
+        "rating": 4.6,
+        "imageUrl": "https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=400&q=80"
+    },
+    {
+        "id": 6,
+        "name": "Women's Kurti",
+        "category": "Clothing",
+        "price": 899,
+        "originalPrice": 1599,
+        "rating": 4.4,
+        "imageUrl": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=400&q=80"
+    },
+    {
+        "id": 7,
+        "name": "Running Shoes",
+        "category": "Footwear",
+        "price": 1799,
+        "originalPrice": 2999,
+        "rating": 4.8,
+        "imageUrl": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=400&q=80"
+    },
+    {
+        "id": 8,
+        "name": "Casual Sneakers",
+        "category": "Footwear",
+        "price": 1399,
+        "originalPrice": 2299,
+        "rating": 4.5,
+        "imageUrl": "https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=400&q=80"
+    },
+    {
+        "id": 9,
+        "name": "Formal Sandals",
+        "category": "Footwear",
+        "price": 799,
+        "originalPrice": 1299,
+        "rating": 4.1,
+        "imageUrl": "https://images.unsplash.com/photo-1603487742131-4160ec999306?auto=format&fit=crop&w=400&q=80"
+    },
+    {
+        "id": 10,
+        "name": "JavaScript Guide Book",
+        "category": "Books",
+        "price": 599,
+        "originalPrice": 999,
+        "rating": 4.9,
+        "imageUrl": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=400&q=80"
+    },
+    {
+        "id": 11,
+        "name": "Atomic Habits",
+        "category": "Books",
+        "price": 399,
+        "originalPrice": 699,
+        "rating": 4.8,
+        "imageUrl": "https://images.unsplash.com/photo-1589998059171-988d887df646?auto=format&fit=crop&w=400&q=80"
+    },
+    {
+        "id": 12,
+        "name": "React Handbook",
+        "category": "Books",
+        "price": 699,
+        "originalPrice": 1099,
+        "rating": 4.7,
+        "imageUrl": "https://images.unsplash.com/photo-1495446815901-a7297e633e8d?auto=format&fit=crop&w=400&q=80"
+    }
+]

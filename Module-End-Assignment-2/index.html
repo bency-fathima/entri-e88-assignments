@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopNest - Shop Smart</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>ShopNest</h1>
+    <input type="text" id="searchInput" placeholder="Search products...">
+    <button id="cartBtn">🛒 Cart (<span id="cartCount">0</span>)</button>
+  </header>
+
+  <div class="filters" id="categoryFilters">
+    <button data-category="All" class="active">All</button>
+    <button data-category="Electronics">Electronics</button>
+    <button data-category="Clothing">Clothing</button>
+    <button data-category="Footwear">Footwear</button>
+    <button data-category="Books">Books</button>
+  </div>
+
+  <main>
+    <div id="productGrid" class="grid"></div>
+    <p id="noResult" class="hidden">No products found</p>
+  </main>
+
+  <!-- Cart Drawer -->
+  <div id="cartDrawer" class="cart-drawer hidden">
+    <h2>Your Cart</h2>
+    <button id="closeCart">X</button>
+    <div id="cartItems"></div>
+    <h3>Total: ₹<span id="cartTotal">0</span></h3>
+    <button id="clearCart">Clear Cart</button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
