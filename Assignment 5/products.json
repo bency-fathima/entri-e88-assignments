@@ -1,0 +1,14 @@
+[
+    { "id": 1,  "name": "Wireless Headphones",        "category": "Electronics", "price": 120, "originalPrice": 160, "rating": 4.5, "imageUrl": "https://picsum.photos/seed/headphones/600/800" },
+    { "id": 2,  "name": "Smart Watch",                "category": "Electronics", "price": 210, "originalPrice": 260, "rating": 4.3, "imageUrl": "https://picsum.photos/seed/smartwatch/600/800" },
+    { "id": 3,  "name": "Bluetooth Speaker",          "category": "Electronics", "price": 85,  "originalPrice": 110, "rating": 4.2, "imageUrl": "https://picsum.photos/seed/speaker/600/800" },
+    { "id": 4,  "name": "Structured Utility Jacket",  "category": "Clothing",    "price": 450, "originalPrice": 520, "rating": 4.8, "imageUrl": "assets/outerwear.jpg" },
+    { "id": 5,  "name": "Oversized Poplin Shirt",     "category": "Clothing",    "price": 180, "originalPrice": 220, "rating": 4.4, "imageUrl": "assets/tops.jpg" },
+    { "id": 6,  "name": "Tailored Wide-Leg Trousers", "category": "Clothing",    "price": 280, "originalPrice": 340, "rating": 4.6, "imageUrl": "assets/bottoms.jpg" },
+    { "id": 7,  "name": "Monolith Leather Boots",     "category": "Footwear",    "price": 650, "originalPrice": 750, "rating": 4.9, "imageUrl": "assets/footwear.jpg" },
+    { "id": 8,  "name": "Classic White Sneakers",     "category": "Footwear",    "price": 140, "originalPrice": 180, "rating": 4.5, "imageUrl": "https://picsum.photos/seed/sneakers/600/800" },
+    { "id": 9,  "name": "Suede Loafers",              "category": "Footwear",    "price": 230, "originalPrice": 290, "rating": 4.1, "imageUrl": "https://picsum.photos/seed/loafers/600/800" },
+    { "id": 10, "name": "The Minimalist Wardrobe",    "category": "Books",       "price": 28,  "originalPrice": 35,  "rating": 4.7, "imageUrl": "https://picsum.photos/seed/book1/600/800" },
+    { "id": 11, "name": "History of Fashion",         "category": "Books",       "price": 42,  "originalPrice": 55,  "rating": 4.6, "imageUrl": "https://picsum.photos/seed/book2/600/800" },
+    { "id": 12, "name": "Street Style Annual",        "category": "Books",       "price": 36,  "originalPrice": 45,  "rating": 4.0, "imageUrl": "https://picsum.photos/seed/book3/600/800" }
+  ]
