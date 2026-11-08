@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>ShopNest</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+  <script>
+
+    const products = [
+      {
+        id: 1,
+        name: "Classic White T-Shirt",
+        category: "Clothing",
+        price: 499,
+        originalPrice: 799,
+        rating: 4.5,
+        imageUrl: "https://cdn.pixabay.com/photo/2024/02/06/18/10/ai-generated-8557635_1280.jpg"
+      }, {
+        id: 2,
+        name: "Wireless Headphone",
+        category: "Electronics",
+        price: 1899,
+        originalPrice: 2799,
+        rating: 4.7,
+        imageUrl: "https://m.media-amazon.com/images/I/517lSvEVVsL.jpg"
+      }, {
+        id: 3,
+        name: "Blue Denim Jacket",
+        category: "Clothing",
+        price: 1499,
+        originalPrice: 2199,
+        rating: 4.6,
+        imageUrl: "https://media-photos.depop.com/b0/9998633/980965080_d8e5e595b7ec41a2a9f4c829176adc42/P0.jpg"
+      }, {
+        id: 4,
+        name: "Smart Watch",
+        category: "Electronics",
+        price: 2499,
+        originalPrice: 3999,
+        rating: 4.4,
+        imageUrl: "https://img.freepik.com/premium-photo/three-smart-watches-mockup_1029473-626625.jpg"
+      }, {
+        id: 5,
+        name: "Leather Backpack",
+        category: "Accessories",
+        price: 1299,
+        originalPrice: 1999,
+        rating: 4.3,
+        imageUrl: "https://i.etsystatic.com/52009313/r/il/7d35be/6909456935/il_1080xN.6909456935_lk2n.jpg"
+      }, {
+        id: 6,
+        name: "Mechanical Keyboard",
+        category: "Electronics",
+        price: 2199,
+        originalPrice: 3299,
+        rating: 4.8,
+        imageUrl: "https://trymechkeys.com/keychron-v2-custom-mechanical-keyboard-with-qmk-viacarbon-black-frame-2-1663401455894.jpg"
+      }, {
+        id: 7,
+        name: "Sunglasses",
+        category: "Accessories",
+        price: 799,
+        originalPrice: 1299,
+        rating: 4.2,
+        imageUrl: "https://5.imimg.com/data5/ML/PF/SU/SELLER-84307228/mens-black-wayfarer-sunglasses-1000x1000.jpg"
+      }, {
+        id: 8,
+        name: "High-Waist Blue Jeans",
+        category: "Clothing",
+        price: 1399,
+        originalPrice: 1999,
+        rating: 4.6,
+        imageUrl: "https://media.endclothing.com/media/catalog/product/B/R/BR_I035893-0112_1_1.jpg"
+      }, {
+        id: 9,
+        name: "Pink Top",
+        category: "Clothing",
+        price: 599,
+        originalPrice: 899,
+        rating: 4.1,
+        imageUrl: "https://i.pinimg.com/originals/c3/5b/b7/c35bb7311f9c59304f0c5209f3474049.jpg"
+      }, {
+        id: 10,
+        name: "Men Casual Sneakers",
+        category: "Footwear",
+        price: 1799,
+        originalPrice: 2799,
+        rating: 4.4,
+        imageUrl: "https://www.fashionbeans.com/wp-content/uploads/2023/02/olivercabell_apairofwhitesneakersontopofstool.jpg"
+      }, {
+        id: 11,
+        name: "Women Casual Sneakers",
+        category: "Footwear",
+        price: 1199,
+        originalPrice: 1899,
+        rating: 4.3,
+        imageUrl: "https://assets.myntassets.com/h_200,w_200,c_fill,g_auto/h_1440,q_100,w_1080/v1/assets/images/16612566/2022/11/15/47df94ae-627c-43d7-b481-ed37ba9316ee1668510189015DressBerryWomenMauveWovenDesignSlip-OnSneakers1.jpg"
+      }, {
+        id: 12,
+        name: "Black Tote Bag",
+        category: "Accessories",
+        price: 1499,
+        originalPrice: 2199,
+        rating: 4.5,
+        imageUrl: "https://images.rawpixel.com/image_social_square/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTEyL3BmLXM3Mi1wYWktMjEwLW15bnQtMDEtam9iMTQyMS5qcGc.jpg"
+      }
+    ]
+
+
+
+
+
+    const head = document.createElement('header')
+    const div = document.createElement('div')
+    const searchBar = document.createElement('input')
+    searchBar.placeholder = 'Search'
+
+    const btn1 = document.createElement('button')
+    btn1.textContent = "All"
+    btn1.className = "btn"
+    const btn2 = document.createElement('button')
+    btn2.textContent = "Electronics"
+     btn2.className = "btn"
+    const btn3 = document.createElement('button')
+    btn3.textContent = "Clothing"
+     btn3.className = "btn"
+    const btn4 = document.createElement('button')
+    btn4.textContent = "Footwear"
+     btn4.className = "btn"
+    const btn5 = document.createElement('button')
+    btn5.textContent = "Accessories"
+       btn5.className = "btn"
+    const productsContainer = document.createElement('div')
+    productsContainer.className = "container"
+
+      
+      div.appendChild(searchBar)
+      head.appendChild(div)
+     
+      document.body.appendChild(head)
+      document.body.appendChild(btn1)
+      document.body.appendChild(btn2)
+      document.body.appendChild(btn3)
+      document.body.appendChild(btn4)
+      document.body.appendChild(btn5)
+
+ const cart = JSON.parse(localStorage.getItem("cart")) || []
+
+ function saveCart() {
+    localStorage.setItem("cart", JSON.stringify(cart))
+}
+
+    function displayProducts(productList) {
+      productsContainer.innerHTML = ""
+
+     
+
+      productList.forEach((product) => {
+
+
+        const div = document.createElement('div')
+        div.className = "productslists"
+
+        const displayImage = document.createElement('img')
+        displayImage.src = product.imageUrl
+        displayImage.style.width = "200px"
+        displayImage.style.height = "250px"
+        div.appendChild(displayImage)
+
+        const displayName = document.createElement('p')
+        displayName.textContent = product.name
+        displayName.style.fontSize = "20px"
+        div.appendChild(displayName)
+
+        const displayPrice = document.createElement('p')
+        displayPrice.textContent = `Rs.${product.price}`
+        displayPrice.style.fontSize = "20px"
+        displayPrice.style.color = "green"
+        div.appendChild(displayPrice)
+
+        const displayRating = document.createElement('p')
+        displayRating.textContent = `Rating: ${product.rating}`
+        displayRating.style.fontSize = "17px"
+        div.appendChild(displayRating)
+
+        const addToCartBtn = document.createElement('button')
+        addToCartBtn.innerHTML = "Add to Cart"
+        addToCartBtn.className = "cartBtn"
+
+
+
+        addToCartBtn.addEventListener('click', () => {
+          const existingItem = cart.find(item => item.id === product.id);
+
+if (existingItem) {
+    existingItem.quantity++;
+} else {
+    cart.push({
+        ...product,
+        quantity: 1
+    });
+}
+          console.log(cart)
+          renderCart()
+          saveCart()
+        })
+div.appendChild(addToCartBtn)
+productsContainer.appendChild(div)
+
+        })
+
+        
+        
+      }
+
+      
+
+       btn1.addEventListener('click', () => {
+        displayProducts(products)
+      })
+
+      btn2.addEventListener('click', () => {
+        const elec = products.filter(product => product.category === "Electronics")
+        displayProducts(elec)
+      })
+
+       btn3.addEventListener('click', () => {
+        const cloth = products.filter(product => product.category === "Clothing")
+        displayProducts(cloth)
+      })
+
+      btn4.addEventListener('click', () => {
+        const foot = products.filter(product => product.category === "Footwear")
+        displayProducts(foot)
+      })
+
+       btn5.addEventListener('click', () => {
+        const acc = products.filter(product => product.category === "Accessories")
+        displayProducts(acc)
+      })
+      
+      const mainContainer = document.createElement("div");
+mainContainer.className = "main-container";
+
+document.body.appendChild(mainContainer);
+    
+mainContainer.appendChild(productsContainer)
+
+
+
+    searchBar.addEventListener('input', (e, product) => {
+      const value = e.target.value.toLowerCase()
+
+      searchBar.addEventListener('input', (e) => {
+    const value = e.target.value.toLowerCase();
+
+    if (value === "") {
+        displayProducts(products);
+    } else {
+        const filteredProducts = products.filter((product) => {
+            return product.name.toLowerCase().includes(value);
+        });
+
+        displayProducts(filteredProducts);
+
+        if (filteredProducts.length === 0) {
+            const display = document.createElement('h3');
+            display.textContent = "No Products Found";
+            display.className = "notFound";
+            productsContainer.appendChild(display);
+        }
+    }
+});
+      
+    })
+
+
+    
+
+
+
+const cartContainer = document.createElement("div")
+cartContainer.className = "cart-container"
+mainContainer.appendChild(cartContainer)
+
+function renderCart(product, item) {
+    cartContainer.innerHTML = ""
+
+    cart.forEach((item) => {
+        const cartItem = document.createElement("div")
+        cartItem.className = "cart"
+
+        const productImg = document.createElement('img')
+        productImg.src = item.imageUrl
+        productImg.style.width = "200px"
+        productImg.style.height = "250px"
+
+        const productName = document.createElement("h3")
+        productName.textContent = item.name
+
+        const productPrice = document.createElement("p")
+        productPrice.textContent = `₹${item.price}`
+
+        cartItem.appendChild(productImg)
+        cartItem.appendChild(productName)
+        cartItem.appendChild(productPrice)
+
+        cartContainer.appendChild(cartItem)
+
+        const plusBtn = document.createElement("button")
+plusBtn.textContent = "+"
+
+const countBtn = document.createElement("button")
+countBtn.textContent = item.quantity
+
+const minusBtn = document.createElement("button")
+minusBtn.textContent = "-"
+
+const removeBtn = document.createElement('button')
+removeBtn.textContent = "Remove"
+removeBtn.className = "rmv"
+
+ 
+ plusBtn.addEventListener('click', () => {
+        item.quantity++
+        renderCart()
+        saveCart()
+      })
+
+       minusBtn.addEventListener('click', () => {
+        if(item.quantity > 1) {
+         item.quantity--
+         renderCart()
+         saveCart()
+        } 
+      })
+
+     
+      removeBtn.addEventListener("click", () => {
+    const index = cart.findIndex(cartItem => cartItem.id === item.id);
+
+    if (index !== -1) {
+        cart.splice(index, 1);
+    }
+    saveCart()
+    renderCart()
+    })
+
+
+cartItem.appendChild(plusBtn)
+cartItem.appendChild(countBtn)
+cartItem.appendChild(minusBtn)
+cartItem.appendChild(removeBtn)
+      
+    })
+
+const totalPrice = cart.reduce((total, item) => {
+    return total + (item.price * item.quantity);
+}, 0);
+  
+   const totalDisplay = document.createElement("h3");
+   totalDisplay.className = "price"
+totalDisplay.textContent = `Total: Rs.${totalPrice}`;
+
+cartContainer.appendChild(totalDisplay);
+   
+}
+
+displayProducts(products)
+    renderCart()
+
+
+
+
+
+   
+
+
+
+
+
+
+
+  </script>
+
+</body>
+
+</html>
