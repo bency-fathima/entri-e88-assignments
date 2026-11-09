@@ -1,0 +1,146 @@
+[
+    {
+        "id": 1,
+        "name": "Wireless Noise-Cancelling Headphones",
+        "category": "Electronics",
+        "price": 4999,
+        "originalPrice": 7999,
+        "rating": 4.6,
+        "imageUrl": "https://m.media-amazon.com/images/I/71YM2N5whtL.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Smart Fitness Watch",
+        "category": "Electronics",
+        "price": 3499,
+        "originalPrice": 5999,
+        "rating": 4.4,
+        "imageUrl": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcT2K9eeHVBfC0KC4hSDT6u5HuspPzEYAADekR--LcYO4evCjqFpyv0KMw0_LzBTAph1IAqw0FlU4of98OZh64nXG3m-1Bl0Gu2xtN2C5_sd5rxNswZlF25-BHrxKXSFT3_iwyTo3OMr&usqp=CAc"
+    },
+    {
+        "id": 3,
+        "name": "Portable Bluetooth Speaker",
+        "category": "Electronics",
+        "price": 1799,
+        "originalPrice": 2999,
+        "rating": 4.3,
+        "imageUrl": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSfgn8J_lBrQreOgPbT0If61CZjlVrp_-K-oYzngl-YebK-VKVUaZflk-rHDGvZF8WaZd-KZDjQvtMQW0NJbJFsyio6UxR-0TpWVoqYSFFAF-n2eYt1bo-gmfJwih8ItdS2zdfX4A&usqp=CAc"
+    },
+    {
+        "id": 4,
+        "name": "20000mAh Power Bank",
+        "category": "Electronics",
+        "price": 1499,
+        "originalPrice": 2199,
+        "rating": 4.5,
+        "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdthSfU17h1Ws3theAtx9yE2aCKdmS432UswDi0pRnqw&s=10"
+    },
+    {
+        "id": 5,
+        "name": "Cotton Crew-Neck T-Shirt",
+        "category": "Clothing",
+        "price": 499,
+        "originalPrice": 899,
+        "rating": 4.2,
+        "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjKV2-xHFva_WUjkhnnDF0gUpADa-zKzvYcKX_wCFlvA&s=10"
+    },
+    {
+        "id": 6,
+        "name": "Slim Fit Denim Jeans",
+        "category": "Clothing",
+        "price": 1299,
+        "originalPrice": 2199,
+        "rating": 4.1,
+        "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpcTJ-IM9IBAqi5mNqdhQZEMnyHt_Kj6GOb19_HqUNXQ&s=10"
+    },
+    {
+        "id": 7,
+        "name": "Hooded Fleece Sweatshirt",
+        "category": "Clothing",
+        "price": 1199,
+        "originalPrice": 1999,
+        "rating": 4.4,
+        "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEVPSN_syD2ZA2iq7TKRpJmlVD82edUhzZgoWRMyjK5A&s=10"
+    },
+    {
+        "id": 8,
+        "name": "Linen Summer Shirt",
+        "category": "Clothing",
+        "price": 899,
+        "originalPrice": 1499,
+        "rating": 4.0,
+        "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCDFBdNJ0T0JbMHySBXwP2HxWGMYncVFawLXrk0oq3cg&s=10"
+    },
+    {
+        "id": 9,
+        "name": "Running Shoes Pro",
+        "category": "Footwear",
+        "price": 2499,
+        "originalPrice": 3999,
+        "rating": 4.5,
+        "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwqqIVyI9Gu4VfIwAaFfGRa0kOF2o28SGOM4CRg9RvSQ&s"
+    },
+    {
+        "id": 10,
+        "name": "Classic White Sneakers",
+        "category": "Footwear",
+        "price": 1799,
+        "originalPrice": 2499,
+        "rating": 4.3,
+        "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZgLA2_r0L9rEUb_OLeynvDqNIGCVZKZSJPsXIRzbMfw&s=10"
+    },
+    {
+        "id": 11,
+        "name": "Leather Formal Shoes",
+        "category": "Footwear",
+        "price": 2999,
+        "originalPrice": 4499,
+        "rating": 4.2,
+        "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_sCI5uNxB7BxRIXdX_HV4dpDrFMCbaeyEv_irqWcNPg&s=10"
+    },
+    {
+        "id": 12,
+        "name": "Comfort Flip-Flops",
+        "category": "Footwear",
+        "price": 399,
+        "originalPrice": 699,
+        "rating": 3.9,
+        "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjpD7T0SUKXqjY-GXSBrJsX_vdZQBo4fohVyD_04is0A&s=10"
+    },
+    {
+        "id": 13,
+        "name": "Atomic Habits",
+        "category": "Books",
+        "price": 399,
+        "originalPrice": 599,
+        "rating": 4.8,
+        "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdHocc1k3q6__WNrqgmhOwyRSj_BzEp4PBtPStEwMgBQ&s=10"
+    },
+    {
+        "id": 14,
+        "name": "The Psychology of Money",
+        "category": "Books",
+        "price": 349,
+        "originalPrice": 499,
+        "rating": 4.7,
+        "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1rtMJx4Xk-dCU7FnjAOlpUbaeX1PD61OcSk5kB_2Niw&s=10"
+    },
+    {
+        "id": 15,
+        "name": "Clean Code",
+        "category": "Books",
+        "price": 1099,
+        "originalPrice": 1599,
+        "rating": 4.6,
+        "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvw-YQG7tCt1KjTi0rX-f9kpHuqwat16MLvKRFtpMq7Q&s=10"
+    },
+    {
+        "id": 16,
+        "name": "JavaScript: The Good Parts",
+        "category": "Books",
+        "price": 549,
+        "originalPrice": 799,
+        "rating": 4.4,
+        "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJc1gfUSNuti5qrqFE5eqLehL9Anz0dqHqIPQgkE6nWw&s=10"
+    }
+]
