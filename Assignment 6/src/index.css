@@ -1,0 +1,60 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  background: #555d83;
+  color: #e8eaf2;
+}
+
+/* App layout */
+.app { max-width: 1200px; margin: 0 auto; padding: 24px 16px 48px; }
+
+header { margin-bottom: 24px; }
+header h1 { margin: 0 0 4px; font-size: 32px; }
+header p { margin: 0; color: #9aa1b9; }
+
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 24px;
+  align-items: start;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+/* Loading spinner */
+.spinner-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 60px 0;
+  color: #9aa1b9;
+}
+.spinner {
+  width: 44px;
+  height: 44px;
+  border: 4px solid #2c3354;
+  border-top-color: #5b6cff;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+
+/* Empty / error messages */
+.no-movies, .error {
+  padding: 40px 0;
+  text-align: center;
+  color: #9aa1b9;
+  font-size: 18px;
+}
+.error { color: #ff7a7a; }
+
+@media (max-width: 800px) {
+  .layout { grid-template-columns: 1fr; }
+}

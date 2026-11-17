@@ -1,0 +1,32 @@
+[
+    { "id": 1, "title": "Lucifer", "genre": "Action", "year": 2019, "rating": 7.3 },
+    { "id": 2, "title": "Pulimurugan", "genre": "Action", "year": 2016, "rating": 7.3 },
+    { "id": 3, "title": "Angamaly Diaries", "genre": "Action", "year": 2017, "rating": 7.7 },
+    { "id": 4, "title": "Ayyappanum Koshiyum", "genre": "Action", "year": 2020, "rating": 7.7 },
+    { "id": 5, "title": "Minnal Murali", "genre": "Action", "year": 2021, "rating": 7.6 },
+    { "id": 6, "title": "Aavesham", "genre": "Action", "year": 2024, "rating": 7.7 },
+  
+    { "id": 7, "title": "Maheshinte Prathikaaram", "genre": "Comedy", "year": 2016, "rating": 8.2 },
+    { "id": 8, "title": "Thanneer Mathan Dinangal", "genre": "Comedy", "year": 2019, "rating": 7.9 },
+    { "id": 9, "title": "Bangalore Days", "genre": "Comedy", "year": 2014, "rating": 8.3 },
+    { "id": 10, "title": "Sudani from Nigeria", "genre": "Comedy", "year": 2018, "rating": 7.9 },
+  
+    { "id": 11, "title": "Kumbalangi Nights", "genre": "Drama", "year": 2019, "rating": 8.5 },
+    { "id": 12, "title": "Thondimuthalum Driksakshiyum", "genre": "Drama", "year": 2017, "rating": 8.2 },
+    { "id": 13, "title": "Ustad Hotel", "genre": "Drama", "year": 2012, "rating": 8.0 },
+    { "id": 14, "title": "Kireedam", "genre": "Drama", "year": 1989, "rating": 8.6 },
+    { "id": 15, "title": "Joji", "genre": "Drama", "year": 2021, "rating": 7.5 },
+    { "id": 16, "title": "2018", "genre": "Drama", "year": 2023, "rating": 8.1 },
+  
+    { "id": 17, "title": "Drishyam", "genre": "Thriller", "year": 2013, "rating": 8.2 },
+    { "id": 18, "title": "Manjummel Boys", "genre": "Thriller", "year": 2024, "rating": 8.2 },
+    { "id": 19, "title": "Jallikattu", "genre": "Thriller", "year": 2019, "rating": 7.2 },
+  
+    { "id": 20, "title": "Premam", "genre": "Romance", "year": 2015, "rating": 8.3 },
+    { "id": 21, "title": "Premalu", "genre": "Romance", "year": 2024, "rating": 7.6 },
+  
+    { "id": 22, "title": "Manichitrathazhu", "genre": "Horror", "year": 1993, "rating": 8.5 },
+    { "id": 23, "title": "Bramayugam", "genre": "Horror", "year": 2024, "rating": 7.5 },
+  
+    { "id": 24, "title": "Android Kunjappan Version 5.25", "genre": "Sci-Fi", "year": 2019, "rating": 7.8 }
+  ]
