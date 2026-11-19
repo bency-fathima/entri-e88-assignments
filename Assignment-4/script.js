@@ -99,6 +99,12 @@ function loadQuestion() {
                 score++;
             } else {
                 button.style.backgroundColor = "red";
+
+                optionsElement.querySelectorAll("button").forEach((btn) => {
+                    if (btn.textContent === currentQuestion.answer) {
+                        btn.style.backgroundColor = "green";
+                    }
+                });
             }
             nextButton.disabled = false;
         });
